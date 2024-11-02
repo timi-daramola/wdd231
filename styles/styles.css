@@ -1,0 +1,94 @@
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+body {
+	font-family: Roboto, sans-serif;
+}
+/* Mobile View ***************/
+#menu {
+	display: block;
+	font-size: 2rem;
+	font-weight:700;
+	text-decoration: none;
+	padding: .5rem .75rem;
+	background-color: #eee;
+	color: #000;
+}
+
+#menu::before {
+	content: "≡";
+}
+
+nav {
+	background-color: black;
+}
+
+.top {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    height: 150px;
+    background-color: #026fb7;
+}
+
+.profile-pic {
+    width: 100px;
+    height: auto;
+    display: flex;
+}
+
+.navigation {
+	list-style: none;
+	margin: 0 auto;
+	max-width: 100%;
+    align-items: center;
+}
+
+.navigation li {
+	display: none;
+}
+.navigation a {
+	display: block;
+	padding: 0.75rem;
+	text-align: center;
+	text-decoration: none;
+	color: white;
+	font-weight: 700;
+	transition: 0.5s;
+	font-size: clamp(1rem, 2vmin, 1.5rem);
+}
+
+.navigation a:hover, navigation a:active {
+	color: black;
+	background-color: white;
+}
+
+.show li {
+	display: block;
+}
+
+#menu.show::before {
+	content: "X";
+}
+
+/* Media Query for wider than mobile viewports. Breakpoint should be based upon the design and content and use em units to be relative to the user's font size versus fixed with pixels.  
+
+In most WDD courses there is a requirement to use a separate file. This part would go into a separate CSS file. 
+*/
+@media only screen and (min-width: 40em) {
+	.navigation {
+		display: flex;
+	}
+	.navigation li {
+		display: block; /* change state in small view */
+		flex: 1 1 100%;
+	}
+	.navigation a {
+		text-align: center;
+	}
+	#menu {
+		display: none;
+	}
+}
