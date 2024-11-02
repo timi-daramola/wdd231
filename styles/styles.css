@@ -30,7 +30,7 @@ nav {
     align-items: center;
     width: 100%;
     height: 150px;
-    background-color: #026fb7;
+    background-color: #022c6bc7;
 }
 
 .profile-pic {
@@ -91,4 +91,181 @@ In most WDD courses there is a requirement to use a separate file. This part wou
 	#menu {
 		display: none;
 	}
+}
+
+
+/* ===========================================================*/
+
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+body {
+	font-family: "exo", sans-serif;
+    max-width: 80%;
+    margin: 0 auto;
+}
+
+
+header {
+	background-color: #022c6bc7;
+    color: white;
+	display: block;
+	align-items: center;
+	justify-content: center;
+	border: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+header {
+	margin: 0 auto;
+}
+
+.grid {
+    display: grid;
+    align-items: center;
+}
+
+main {
+    
+	display: grid;
+    align-items: center;
+}
+
+main h1 {
+	color: white;
+	background-color: #022c6bc7;
+	padding: 10px;
+	border-top-left-radius: 10px;
+	border-top-right-radius: 10px;
+	text-align: center;
+}
+
+
+.card {
+    width: 46rem;
+	margin: 1rem;
+    border: 1px solid rgba(0, 0, 0, .1);
+    color: #000;
+	grid-column: 1/2;
+    grid-row: 1/2;
+	border: 2px solid #ddd;
+	border-radius: 10px;
+	height: 25.5rem;
+}
+
+.card1 {
+	width: 18rem;
+    position: relative;
+    grid-row: 1/2;
+	margin-right: 30px;
+	border: 2px solid #ddd;
+	border-radius: 10px;
+	height: 25.5rem;
+}
+
+.upper_text {
+	max-width: 570px;
+	padding: 25px;
+}
+
+
+.intro {
+	padding: 15px;
+}
+
+.heading {
+	text-align: center;
+	font-size: larger;	
+	font-weight: bold;
+	padding: 10px;
+	color: #0f0f0fd7;
+	margin: auto;
+	border-bottom: 2px solid #ddd;
+	width: 30rem;
+}
+
+.imageDesc {
+	display: flex;
+	font-style: italic;
+	position: absolute;
+	margin-top: 8.1rem;
+	margin-left: 10px;
+}
+
+.card img {
+	width: 200px;
+    height: auto;
+    float: left;
+	padding: 10px;
+	margin-top: 2px;
+}
+
+.card #profile-pic {
+	width: 200px;
+    height: auto;
+    float: right;
+	padding: 20px;
+	margin-top: -10rem;
+}
+
+.card1 ul {
+	margin-top: 3rem;
+}
+
+.card1 li {
+	margin-left: 30px;
+	padding: 5px;	
+}
+
+.card1 a {
+	margin: auto;
+}
+
+h1 {
+    text-align: center;
+	font-size: 1.5rem;
+    padding: 20px;
+}
+
+nav {
+	display: flex;
+	background-color: #36454f;
+	padding: 1rem;
+    justify-content: space-evenly;
+    align-items: center;
+    border-bottom: 2rem;
+	
+}
+nav ul {
+	list-style-type: none;
+}
+
+nav a {
+	display: block;
+    padding: 0.5rem;
+    text-decoration: none;
+    font-size: 1.2rem;
+    font-weight: 700;
+    color: #fff;
+}
+
+nav a:hover {
+	text-decoration:underline;
+}
+
+.active {
+	color: yellow;
+}
+
+.highlight {
+	color: yellow;
+}
+
+footer {
+	text-align: center;
+	color: white;
+	background-color: #022c6bc7;
+	padding: 18px;
 }
