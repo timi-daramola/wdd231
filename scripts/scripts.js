@@ -116,10 +116,13 @@ const cardContainer = document.querySelector('.card-container');
 
 const postMethods = () => {
     courses.map((postData) => {
+        let subject = postData.subject;
+        let number = postData.number;
+        const courseDetails = subject + " " + number
         const postElement = document.createElement('div');
         postElement.classList.add('courseList')
         postElement.innerHTML = `
-        <p class="cardbody">${postData.title}</p>
+        <p class="cardbody">${courseDetails}</p>
         `
         cardContainer.appendChild(postElement);
     })

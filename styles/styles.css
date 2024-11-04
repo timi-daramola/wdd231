@@ -171,14 +171,22 @@ main h1 {
     margin: auto;
 }
 
-
 .courseList {
 	padding: 1rem;
 	box-shadow: 0 0 .4rem black;
+	margin: 10px;
+	background-color: rgba(80, 12, 12, 0.986);
+}
+
+.card-container {
+	display: flex;
 }
 
 .cardbody{
-	color: blue;
+	color: white;
+	width: 150px;
+	text-align: center;
+	font-weight: bolder;
 }
 
 .card1 h1 {
