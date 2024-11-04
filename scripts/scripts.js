@@ -114,7 +114,7 @@ const courses = [
 function displayCourseTitle(arg) {
     let items = "";
     for(let i=0; i < arg.length; i++){
-        items += `<p>${arg[i].title}</p>`;
+        items += `<p>${arg[i].title}</p>`
     }
     return items;
 }
