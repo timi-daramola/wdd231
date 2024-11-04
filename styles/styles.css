@@ -103,7 +103,6 @@ body {
     margin: 0 auto;
 }
 
-
 header {
 	background-color: #022c6bc7;
     color: white;
@@ -122,12 +121,6 @@ header {
     align-items: center;
 }
 
-main {
-    
-	display: grid;
-    align-items: center;
-}
-
 main h1 {
 	color: white;
 	background-color: #022c6bc7;
@@ -139,7 +132,7 @@ main h1 {
 
 
 .card {
-    width: 46rem;
+    max-width: 46rem;
 	margin: 1rem;
     border: 1px solid rgba(0, 0, 0, .1);
     color: #000;
@@ -151,7 +144,7 @@ main h1 {
 }
 
 .card1 {
-	width: 18rem;
+	max-width: 18rem;
     position: relative;
     grid-row: 1/2;
 	margin-right: 30px;
@@ -162,7 +155,7 @@ main h1 {
 }
 
 .card2 {
-    width: 65rem;
+    max-width: 65rem;
     margin: auto;
 }
 
@@ -173,13 +166,23 @@ main h1 {
 	background-color: rgba(80, 12, 12, 0.986);
 }
 
-.card-container {
+.newContainer {
+	
 	display: flex;
+}
+
+.card-container {
+	display: grid;
+	
+}
+
+.lower_text {
+	max-width: 20rem;
 }
 
 .cardbody{
 	color: white;
-	width: 250px;
+	width: 200px;
 	text-align: center;
 	font-weight: bolder;
 }
@@ -198,7 +201,6 @@ main h1 {
 	max-width: 570px;
 	padding: 25px;
 }
-
 
 .intro {
 	padding: 15px;
