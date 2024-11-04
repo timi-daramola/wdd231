@@ -111,21 +111,19 @@ const courses = [
     }
 ]
 
-function displayCourseTitle(arg) {
-    let items = "";
-    for(let i=0; i < arg.length; i++){
-        items += `<p>${arg[i].title}</p>`
-    }
-    return items;
+
+const cardContainer = document.querySelector('.card-container');
+
+const postMethods = () => {
+    courses.map((postData) => {
+        const postElement = document.createElement('div');
+        postElement.classList.add('courseList')
+        postElement.innerHTML = `
+        <p class="cardbody">${postData.title}</p>
+        `
+        cardContainer.appendChild(postElement);
+    })
 }
 
-
-let temp = displayCourseTitle(courses);
-
-for(let i=0; i < courses.length; i++){
-    const courseList = document.querySelector(".courseList");
-    courseList.innerHTML = temp;
-}
-
-
+postMethods()
 

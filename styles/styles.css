@@ -172,7 +172,14 @@ main h1 {
 }
 
 
+.courseList {
+	padding: 1rem;
+	box-shadow: 0 0 .4rem black;
+}
 
+.cardbody{
+	color: blue;
+}
 
 .card1 h1 {
     width: 285px;
