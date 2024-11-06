@@ -170,12 +170,22 @@ main h1 {
 	border: 1px solid #ddd;
 }
 
+.course-btn {
+	width: 100px;
+	height: 30px;
+	background-color: #000;
+	color: #fff;
+	border: none;
+	border-radius:5px;
+} 
+
 .wrapper {
 	border: 2px solid #ddd;
 }
 
 .courses {
 	padding: 1rem;
+	text-align: center;
 }
 
 .creditTotal {
