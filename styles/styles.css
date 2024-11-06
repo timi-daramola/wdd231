@@ -166,6 +166,24 @@ main h1 {
 	background-color: rgba(80, 12, 12, 0.986);
 }
 
+.card2 hr {
+	border: 1px solid #ddd;
+}
+
+.wrapper {
+	border: 2px solid #ddd;
+}
+
+.courses {
+	padding: 1rem;
+}
+
+.creditTotal {
+	padding: 1rem;
+	margin: 10px;
+	background-color: rgba(218, 219, 219, 0.986);
+}
+
 .newContainer {
 	
 	display: flex;
