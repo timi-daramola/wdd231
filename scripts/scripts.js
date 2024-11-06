@@ -113,20 +113,80 @@ const courses = [
 
 
 const cardContainer = document.querySelector('.card-container');
+const allCourses = document.getElementById('allCourses').value;
+const cseCourses = document.getElementById('cseCourses').value;
+const wddCourses = document.getElementById('wddCourses').value;
 
-const postMethods = () => {
-    courses.map((postData) => {
+
+
+function allCourseFilter(){
+    courses.filter((postData) => {
         let subject = postData.subject;
         let number = postData.number;
-        const courseDetails = subject + " " + number
+        let completion = postData.completed
         const postElement = document.createElement('div');
-        postElement.classList.add('courseList')
-        postElement.innerHTML = `
-        <p class="cardbody">${courseDetails}</p>
-        `
-        cardContainer.appendChild(postElement);
+        if(allCourses === 'All' && completion === true){
+            let allCoursesListed = subject + " " + number;
+            postElement.classList.add('courseCompleted');
+            cardContainer.appendChild(postElement);
+            postElement.innerHTML = `<p class="cardbody">${allCoursesListed}</p>`
+            cardContainer.appendChild(postElement);
+        }else if(allCourses === 'All' && completion === false){
+            let allCoursesListed = subject + " " + number;
+            postElement.classList.add('courseList');
+            cardContainer.appendChild(postElement);
+            postElement.innerHTML = `<p class="cardbody">${allCoursesListed}</p>`
+            cardContainer.appendChild(postElement);
+        }
+    });
+}
+
+
+function cseCourseFilter(){
+    courses.filter((postData) => {
+        let subject = postData.subject;
+        let number = postData.number;
+        let completion = postData.completed
+        const postElement = document.createElement('div');
+        if(subject === 'CSE' && completion === true){
+            let cseCoursesListed = subject + " " + number;
+            postElement.classList.add('courseCompleted');
+            cardContainer.appendChild(postElement);
+            postElement.innerHTML = `<p class="cardbody">${cseCoursesListed}</p>`
+            cardContainer.appendChild(postElement);
+        }else if(subject === 'CSE' && completion === false){
+            let cseCoursesListed = subject + " " + number;
+            postElement.classList.add('courseList');
+            cardContainer.appendChild(postElement);
+            postElement.innerHTML = `<p class="cardbody">${cseCoursesListed}</p>`
+            cardContainer.appendChild(postElement);
+        }
     })
 }
 
-postMethods()
 
+function wddCourseFilter(){
+    courses.filter((postData) => {
+        let subject = postData.subject;
+        let number = postData.number;
+        let completion = postData.completed
+        const postElement = document.createElement('div');
+        if(subject === 'WDD' && completion === true){
+            let wddCoursesListed = subject + " " + number;
+            postElement.classList.add('courseCompleted');
+            cardContainer.appendChild(postElement);
+            postElement.innerHTML = `<p class="cardbody">${wddCoursesListed}</p>`
+            cardContainer.appendChild(postElement);
+        }else if(subject === 'WDD' && completion === false){
+            let wddCoursesListed = subject + " " + number;
+            postElement.classList.add('courseList');
+            cardContainer.appendChild(postElement);
+            postElement.innerHTML = `<p class="cardbody">${wddCoursesListed}</p>`
+            cardContainer.appendChild(postElement);
+        }
+    });
+}
+
+function sectionClear(){
+    document.querySelector('.newContainer').innerHTML = "";
+}

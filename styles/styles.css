@@ -166,6 +166,13 @@ main h1 {
 	background-color: rgba(80, 12, 12, 0.986);
 }
 
+.courseCompleted {
+	padding: 1rem;
+	box-shadow: 0 0 .4rem black;
+	margin: 10px;
+	background-color: rgba(36, 122, 19, 0.986);
+}
+
 .card2 hr {
 	border: 1px solid #ddd;
 }
@@ -177,6 +184,7 @@ main h1 {
 	color: #fff;
 	border: none;
 	border-radius:5px;
+	cursor: pointer;
 } 
 
 .wrapper {
@@ -214,6 +222,8 @@ main h1 {
 	text-align: center;
 	font-weight: bolder;
 }
+
+
 
 .card1 h1 {
     width: 285px;
