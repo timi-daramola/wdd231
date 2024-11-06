@@ -117,7 +117,7 @@ header {
 }
 
 .grid {
-    display: grid;
+	display: flex;
     align-items: center;
 }
 
@@ -132,7 +132,7 @@ main h1 {
 
 
 .card {
-    max-width: 46rem;
+    width: 46rem;
 	margin: 1rem;
     border: 1px solid rgba(0, 0, 0, .1);
     color: #000;
@@ -147,7 +147,6 @@ main h1 {
 	max-width: 18rem;
     position: relative;
     grid-row: 1/2;
-	margin-right: 30px;
 	border: 2px solid #ddd;
 	border-radius: 10px;
 	height: 20rem;

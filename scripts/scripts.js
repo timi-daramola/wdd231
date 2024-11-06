@@ -124,6 +124,7 @@ function allCourseFilter(){
         let subject = postData.subject;
         let number = postData.number;
         let completion = postData.completed
+        let total = 0;
         const postElement = document.createElement('div');
         if(allCourses === 'All' && completion === true){
             let allCoursesListed = subject + " " + number;
@@ -138,15 +139,21 @@ function allCourseFilter(){
             postElement.innerHTML = `<p class="cardbody">${allCoursesListed}</p>`
             cardContainer.appendChild(postElement);
         }
+
+        for(let i=0; i<courses.length; i++){
+                total += courses[i].credits;
+            }
+        document.querySelector('.creditTotal').innerHTML = total;
     });
 }
 
 
 function cseCourseFilter(){
-    courses.filter((postData) => {
+        courses.filter((postData) => {
         let subject = postData.subject;
         let number = postData.number;
         let completion = postData.completed
+        let total = 0;
         const postElement = document.createElement('div');
         if(subject === 'CSE' && completion === true){
             let cseCoursesListed = subject + " " + number;
@@ -161,6 +168,11 @@ function cseCourseFilter(){
             postElement.innerHTML = `<p class="cardbody">${cseCoursesListed}</p>`
             cardContainer.appendChild(postElement);
         }
+
+        for(let i=0; i<courses.length; i++){
+            total += courses[i].credits;
+        }
+        document.querySelector('.creditTotal').innerHTML = total;
     })
 }
 
@@ -170,6 +182,7 @@ function wddCourseFilter(){
         let subject = postData.subject;
         let number = postData.number;
         let completion = postData.completed
+        let total = 0;
         const postElement = document.createElement('div');
         if(subject === 'WDD' && completion === true){
             let wddCoursesListed = subject + " " + number;
@@ -184,9 +197,25 @@ function wddCourseFilter(){
             postElement.innerHTML = `<p class="cardbody">${wddCoursesListed}</p>`
             cardContainer.appendChild(postElement);
         }
+
+        document.querySelector('.creditTotal').innerHTML = courses.reduce(calcCredits);
+
+        function calcCredits(total, num){
+            return total - num
+        }
     });
 }
 
 function sectionClear(){
     document.querySelector('.newContainer').innerHTML = "";
 }
+
+
+// function caclculateCredit(arg){
+//     let creditResult = "";
+//     for(i=0; arg.length; i++){
+//         let newCredit = arg[i].credits;
+//         let totalCredit += newCredit;
+//     }
+//     return creditResult;
+// }
