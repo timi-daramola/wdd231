@@ -143,7 +143,7 @@ function allCourseFilter(){
         for(let i=0; i<courses.length; i++){
                 total += courses[i].credits;
             }
-        document.querySelector('.creditTotal').innerHTML = total;
+        document.querySelector('.creditTotal').innerHTML = "Credit total: " + total;
     });
 }
 
@@ -172,7 +172,7 @@ function cseCourseFilter(){
         for(let i=0; i<courses.length; i++){
             total += courses[i].credits;
         }
-        document.querySelector('.creditTotal').innerHTML = total;
+        document.querySelector('.creditTotal').innerHTML = "Credit total: " + total;
     })
 }
 
@@ -203,6 +203,7 @@ function wddCourseFilter(){
         function calcCredits(total, num){
             return total - num
         }
+        document.querySelector('.creditTotal').innerHTML = "Credit total: " + total;
     });
 }
 
@@ -210,12 +211,3 @@ function sectionClear(){
     document.querySelector('.newContainer').innerHTML = "";
 }
 
-
-// function caclculateCredit(arg){
-//     let creditResult = "";
-//     for(i=0; arg.length; i++){
-//         let newCredit = arg[i].credits;
-//         let totalCredit += newCredit;
-//     }
-//     return creditResult;
-// }
