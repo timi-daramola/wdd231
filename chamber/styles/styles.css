@@ -1,0 +1,30 @@
+body {
+    max-width: 80%;
+    margin: auto;
+}
+
+header {
+ display: flex;
+ margin-top: 20px;
+}
+
+.logo {
+    width: 100px;
+}
+
+.navigation {
+    margin-left: 39rem;
+    margin-top: 20px;
+    word-spacing: 20px;
+}
+
+.navigation a {
+    text-decoration: none;
+}
+
+.hero img {
+    position: absolute;
+    display: block;
+    width: 62.5rem;
+    height: auto;
+}
