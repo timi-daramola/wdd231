@@ -43,6 +43,16 @@ header p{
     height: auto;
 }
 
+.btn-hero {
+    position: absolute;
+    margin-top: 14rem;
+    margin-left: 50rem;
+    height: 30px;
+    background-color: #fff;
+    padding: 5px;
+    border-radius: 5px solid;
+}
+
 .first_block {
     display: flex;
     margin-bottom: 20px;
