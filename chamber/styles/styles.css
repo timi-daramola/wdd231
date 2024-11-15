@@ -10,18 +10,23 @@ header {
  margin-right: 68px;
 }
 
-header h2{
-    font-size: 15.5px;
-    margin-top: 23px;
+header h1{
+    font-size: 20px;
+    margin-top: 15px;
    }
-   
+
+header p{
+    margin-top: -10px;
+}
+
 .logo {
     width: 60px;
     padding: 10px;
+    margin-top: 5px;
 }
 
 .navigation {
-    margin-left: 35rem;
+    margin-left: 30rem;
     margin-top: 20px;
     word-spacing: 10px;
 }
