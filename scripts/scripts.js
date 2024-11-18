@@ -112,14 +112,45 @@ const courses = [
 ]
 
 
-const cardContainer = document.querySelector('.card-container');
+const cardContainer = document.querySelector('.cardContainer');
 const allCourses = document.getElementById('allCourses').value;
 const cseCourses = document.getElementById('cseCourses').value;
 const wddCourses = document.getElementById('wddCourses').value;
 
 
 
+function fullCourseList(){
+    courses.filter((postData) => {
+        let subject = postData.subject;
+        let number = postData.number;
+        let completion = postData.completed
+        let total = 0;
+        const postElement = document.createElement('div');
+        if(allCourses === 'All' && completion === true){
+            let allCoursesListed = subject + " " + number;
+            postElement.classList.add('courseCompleted');
+            cardContainer.appendChild(postElement);
+            postElement.innerHTML = `<p class="cardbody">${allCoursesListed}</p>`
+            cardContainer.appendChild(postElement);
+        }else if(allCourses === 'All' && completion === false){
+            let allCoursesListed = subject + " " + number;
+            postElement.classList.add('courseList');
+            cardContainer.appendChild(postElement);
+            postElement.innerHTML = `<p class="cardbody">${allCoursesListed}</p>`
+            cardContainer.appendChild(postElement);
+        }
+
+        for(let i=0; i<courses.length; i++){
+                total += courses[i].credits;
+            }
+        document.querySelector('.creditTotal').innerHTML = "Credit total: " + total;
+    });
+}
+
+fullCourseList();
+
 function allCourseFilter(){
+    cardContainer.innerHTML = '';
     courses.filter((postData) => {
         let subject = postData.subject;
         let number = postData.number;
@@ -149,7 +180,8 @@ function allCourseFilter(){
 
 
 function cseCourseFilter(){
-        courses.filter((postData) => {
+    cardContainer.innerHTML = '';
+    courses.filter((postData) => {
         let subject = postData.subject;
         let number = postData.number;
         let completion = postData.completed
@@ -162,6 +194,7 @@ function cseCourseFilter(){
             postElement.innerHTML = `<p class="cardbody">${cseCoursesListed}</p>`
             cardContainer.appendChild(postElement);
         }else if(subject === 'CSE' && completion === false){
+            cardContainer.innerHTML = '';
             let cseCoursesListed = subject + " " + number;
             postElement.classList.add('courseList');
             cardContainer.appendChild(postElement);
@@ -178,6 +211,7 @@ function cseCourseFilter(){
 
 
 function wddCourseFilter(){
+    cardContainer.innerHTML = '';
     courses.filter((postData) => {
         let subject = postData.subject;
         let number = postData.number;
@@ -190,24 +224,14 @@ function wddCourseFilter(){
             cardContainer.appendChild(postElement);
             postElement.innerHTML = `<p class="cardbody">${wddCoursesListed}</p>`
             cardContainer.appendChild(postElement);
-        }else if(subject === 'WDD' && completion === false){
+        }
+        else if(subject === 'WDD' && completion === false){
             let wddCoursesListed = subject + " " + number;
             postElement.classList.add('courseList');
             cardContainer.appendChild(postElement);
             postElement.innerHTML = `<p class="cardbody">${wddCoursesListed}</p>`
             cardContainer.appendChild(postElement);
         }
-
-        document.querySelector('.creditTotal').innerHTML = courses.reduce(calcCredits);
-
-        function calcCredits(total, num){
-            return total - num
-        }
-        document.querySelector('.creditTotal').innerHTML = "Credit total: " + total;
     });
-}
-
-function sectionClear(){
-    document.querySelector('.newContainer').innerHTML = "";
 }
 

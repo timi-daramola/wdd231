@@ -99,6 +99,7 @@ header p{
 .footer {
     margin-top: 100px;
     display: flex;
+    margin-left: 10rem;
 }
 
 footer p {
