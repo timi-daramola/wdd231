@@ -110,6 +110,7 @@ header {
 .grid {
 	display: flex;
     align-items: center;
+	margin-left: 10px;
 }
 
 main h1 {
@@ -135,7 +136,7 @@ main h1 {
 }
 
 .card1 {
-	max-width: 18rem;
+	max-width: 20rem;
     position: relative;
     grid-row: 1/2;
 	border: 2px solid #ddd;
@@ -145,8 +146,9 @@ main h1 {
 }
 
 .card2 {
-    max-width: 65rem;
+    max-width: 72rem;
     margin: auto;
+	margin-left: 20px;
 }
 
 .courseList {
