@@ -140,41 +140,36 @@ function fullCourseList(){
             cardContainer.appendChild(postElement);
         }
 
-        for(let i=0; i<courses.length; i++){
-                total += courses[i].credits;
-            }
-        document.querySelector('.creditTotal').innerHTML = "Credit total: " + total;
     });
 }
 
 fullCourseList();
 
+
 function allCourseFilter(){
+    
     cardContainer.innerHTML = '';
     courses.filter((postData) => {
         let subject = postData.subject;
         let number = postData.number;
         let completion = postData.completed
-        let total = 0;
         const postElement = document.createElement('div');
-        if(allCourses === 'All' && completion === true){
-            let allCoursesListed = subject + " " + number;
-            postElement.classList.add('courseCompleted');
-            cardContainer.appendChild(postElement);
-            postElement.innerHTML = `<p class="cardbody">${allCoursesListed}</p>`
-            cardContainer.appendChild(postElement);
-        }else if(allCourses === 'All' && completion === false){
-            let allCoursesListed = subject + " " + number;
-            postElement.classList.add('courseList');
-            cardContainer.appendChild(postElement);
-            postElement.innerHTML = `<p class="cardbody">${allCoursesListed}</p>`
-            cardContainer.appendChild(postElement);
-        }
-
-        for(let i=0; i<courses.length; i++){
-                total += courses[i].credits;
+        if(subject !== 'CSE' || subject !== 'WDD'){
+            if(allCourses === 'All' && completion === true){
+                let allCoursesListed = subject + " " + number;
+                postElement.classList.add('courseCompleted');
+                cardContainer.appendChild(postElement);
+                postElement.innerHTML = `<p class="cardbody">${allCoursesListed}</p>`
+                cardContainer.appendChild(postElement);
+            }else if(allCourses === 'All' && completion === false){
+                let allCoursesListed = subject + " " + number;
+                postElement.classList.add('courseList');
+                cardContainer.appendChild(postElement);
+                postElement.innerHTML = `<p class="cardbody">${allCoursesListed}</p>`
+                cardContainer.appendChild(postElement);
             }
-        document.querySelector('.creditTotal').innerHTML = "Credit total: " + total;
+            allCreditCalculator();
+        }
     });
 }
 
@@ -185,27 +180,26 @@ function cseCourseFilter(){
         let subject = postData.subject;
         let number = postData.number;
         let completion = postData.completed
-        let total = 0;
         const postElement = document.createElement('div');
-        if(subject === 'CSE' && completion === true){
-            let cseCoursesListed = subject + " " + number;
-            postElement.classList.add('courseCompleted');
-            cardContainer.appendChild(postElement);
-            postElement.innerHTML = `<p class="cardbody">${cseCoursesListed}</p>`
-            cardContainer.appendChild(postElement);
-        }else if(subject === 'CSE' && completion === false){
-            cardContainer.innerHTML = '';
-            let cseCoursesListed = subject + " " + number;
-            postElement.classList.add('courseList');
-            cardContainer.appendChild(postElement);
-            postElement.innerHTML = `<p class="cardbody">${cseCoursesListed}</p>`
-            cardContainer.appendChild(postElement);
+            
+        if(subject === 'CSE'){
+                        
+            if(subject === 'CSE' && completion === true){
+                let cseCoursesListed = subject + " " + number;
+                postElement.classList.add('courseCompleted');
+                cardContainer.appendChild(postElement);
+                postElement.innerHTML = `<p class="cardbody">${cseCoursesListed}</p>`
+                cardContainer.appendChild(postElement);
+            }else if(subject === 'CSE' && completion === false){
+                cardContainer.innerHTML = '';
+                let cseCoursesListed = subject + " " + number;
+                postElement.classList.add('courseList');
+                cardContainer.appendChild(postElement);
+                postElement.innerHTML = `<p class="cardbody">${cseCoursesListed}</p>`
+                cardContainer.appendChild(postElement);
+            }
+            cseCreditCalculator();
         }
-
-        for(let i=0; i<courses.length; i++){
-            total += courses[i].credits;
-        }
-        document.querySelector('.creditTotal').innerHTML = "Credit total: " + total;
     })
 }
 
@@ -218,20 +212,74 @@ function wddCourseFilter(){
         let completion = postData.completed
         let total = 0;
         const postElement = document.createElement('div');
-        if(subject === 'WDD' && completion === true){
-            let wddCoursesListed = subject + " " + number;
-            postElement.classList.add('courseCompleted');
-            cardContainer.appendChild(postElement);
-            postElement.innerHTML = `<p class="cardbody">${wddCoursesListed}</p>`
-            cardContainer.appendChild(postElement);
-        }
-        else if(subject === 'WDD' && completion === false){
-            let wddCoursesListed = subject + " " + number;
-            postElement.classList.add('courseList');
-            cardContainer.appendChild(postElement);
-            postElement.innerHTML = `<p class="cardbody">${wddCoursesListed}</p>`
-            cardContainer.appendChild(postElement);
+        if(subject == 'WDD'){
+            if(subject === 'WDD' && completion === true){
+                let wddCoursesListed = subject + " " + number;
+                postElement.classList.add('courseCompleted');
+                cardContainer.appendChild(postElement);
+                postElement.innerHTML = `<p class="cardbody">${wddCoursesListed}</p>`
+                cardContainer.appendChild(postElement);
+            }
+            else if(subject === 'WDD' && completion === false){
+                let wddCoursesListed = subject + " " + number;
+                postElement.classList.add('courseList');
+                cardContainer.appendChild(postElement);
+                postElement.innerHTML = `<p class="cardbody">${wddCoursesListed}</p>`
+                cardContainer.appendChild(postElement);
+            }
+            wddCreditCalculator();
         }
     });
 }
 
+
+
+function allCreditCalculator(){
+    const creditArray = [];
+
+    for(let i=0; i<courses.length; i++){
+        let testSubject = courses[i].subject
+        if(testSubject !== 'CSE' || testSubject !== 'WDD'){
+            creditArray.push(courses[i].credits);
+        }
+    }
+    const totalCredits = creditArray.reduce((accumulator, nextnum) => {
+        return accumulator + nextnum;
+    }, 0);                       
+
+    document.querySelector('.creditTotal').innerHTML = "Credit total: " + totalCredits;
+}
+
+
+function cseCreditCalculator(){
+    const creditArray = [];
+
+    for(let i=0; i<courses.length; i++){
+        let testSubject = courses[i].subject
+        if(testSubject === 'CSE'){
+            creditArray.push(courses[i].credits);
+        }
+    }
+    const totalCredits = creditArray.reduce((accumulator, nextnum) => {
+        return accumulator + nextnum;
+    }, 0);                       
+
+    document.querySelector('.creditTotal').innerHTML = "Credit total: " + totalCredits;
+}
+
+
+function wddCreditCalculator(){
+    const creditArray = [];
+
+    for(let i=0; i<courses.length; i++){
+        let testSubject = courses[i].subject
+        if(testSubject === 'WDD'){
+            creditArray.push(courses[i].credits);
+        }
+    }
+    const totalCredits = creditArray.reduce((accumulator, nextnum) => {
+        return accumulator + nextnum;
+    }, 0);                       
+
+    document.querySelector('.creditTotal').innerHTML = "Credit total: " + totalCredits;
+}
