@@ -145,7 +145,7 @@ function fullCourseList(){
 
 fullCourseList();
 
-
+//These lines filter all the courses and calculate the total credits required.
 function allCourseFilter(){
     
     cardContainer.innerHTML = '';
@@ -174,6 +174,7 @@ function allCourseFilter(){
 }
 
 
+//These lines filter courses with 'CSE' conditions and calculate the total credits required.
 function cseCourseFilter(){
     cardContainer.innerHTML = '';
     courses.filter((postData) => {
@@ -203,7 +204,7 @@ function cseCourseFilter(){
     })
 }
 
-
+//These lines filter courses with 'WDD' conditions and calculate the total credits required.
 function wddCourseFilter(){
     cardContainer.innerHTML = '';
     courses.filter((postData) => {
@@ -233,7 +234,7 @@ function wddCourseFilter(){
 }
 
 
-
+//'ALL' credits calculator function
 function allCreditCalculator(){
     const creditArray = [];
 
@@ -251,6 +252,7 @@ function allCreditCalculator(){
 }
 
 
+//'CSE' credits calculator function
 function cseCreditCalculator(){
     const creditArray = [];
 
@@ -268,6 +270,7 @@ function cseCreditCalculator(){
 }
 
 
+//'WDD' credits calculator function
 function wddCreditCalculator(){
     const creditArray = [];
 
