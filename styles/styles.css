@@ -69,6 +69,8 @@ nav {
 
 In most WDD courses there is a requirement to use a separate file. This part would go into a separate CSS file. 
 */
+
+
 @media only screen and (min-width: 40em) {
 	.navigation {
 		display: flex;
@@ -81,6 +83,17 @@ In most WDD courses there is a requirement to use a separate file. This part wou
 		text-align: center;
 	}
 	#menu {
+		display: none;
+	}
+}
+
+@media screen and (max-width: 500px){
+	.cardContainer {
+		display: block;
+		justify-content: center;
+	}
+
+	.navigation {
 		display: none;
 	}
 }
