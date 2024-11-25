@@ -155,17 +155,17 @@ header p{
 }
 
 .footer-para2 {
-    
-    margin-top: 40px;
+    margin-left: 15rem;
     width: 200px;
 }
 
 .year-update {
-
+    margin-top: 3.5rem;
+    margin-left: -12.5rem;
 }
 
 .footer-title {
-    margin-bottom: -50px;
+    margin-bottom: -60px;
     margin-left: 20px;
 }
 
