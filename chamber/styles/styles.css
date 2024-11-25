@@ -47,10 +47,17 @@ header p{
     position: absolute;
     margin-top: 14rem;
     margin-left: 50rem;
-    height: 30px;
-    background-color: #fff;
-    padding: 5px;
+    height: 18px;
+    background-color: #c3c3c3;
+    padding: 10px;
     border-radius: 5px;
+    color: #000;
+    text-align: center;
+    text-decoration: none;
+}
+
+.btn-hero a {
+    text-align: center;
 }
 
 .first_block {
@@ -155,7 +162,7 @@ header p{
 }
 
 .footer-para2 {
-    margin-left: 15rem;
+    margin-left: 11rem;
     width: 200px;
 }
 
@@ -171,7 +178,7 @@ header p{
 
 .socials {
     display: flex;
-    margin-left: 10rem;
+    margin-left: 14rem;
     padding-top: 15px;
 }
 
