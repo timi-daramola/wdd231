@@ -13,6 +13,7 @@ const countryData = {
 	internetTLD: ".ng"
   };
 
+
   // Function to display country information
   function displayCountryInfo(data) {
 	const infoDiv = document.getElementById("countryInfo");
@@ -79,3 +80,62 @@ lastModified.innerHTML = `<span class="highlight">Last Modification: ${new Intl.
 		dateStyle: "short"
 	}
 ).format(today)}</span>`;
+
+
+// Fetch member data and display it
+async function fetchMemberData() {
+	try {
+	  const response = await fetch('data/members.json');
+	  const members = await response.json();
+  
+	  const membersContainer = document.getElementById('members-container');
+	  members.forEach(member => {
+		// Create a div for each member
+		const memberCard = document.createElement('div');
+		memberCard.classList.add('member-card');
+  
+		// Add the image
+		const image = document.createElement('img');
+		image.src = `images/${member.image}`; // Adjust path if needed
+		image.alt = member.name;
+		memberCard.appendChild(image);
+  
+		// Add the name
+		const name = document.createElement('h3');
+		name.textContent = member.name;
+		memberCard.appendChild(name);
+  
+		// Add the address
+		const address = document.createElement('p');
+		address.textContent = `Address: ${member.address}`;
+		memberCard.appendChild(address);
+  
+		// Add the phone number
+		const phone = document.createElement('p');
+		phone.textContent = `Phone: ${member.phone}`;
+		memberCard.appendChild(phone);
+  
+		// Add the website link
+		const website = document.createElement('p');
+		const websiteLink = document.createElement('a');
+		websiteLink.href = member.website;
+		websiteLink.textContent = 'Visit Website';
+		website.appendChild(websiteLink);
+		memberCard.appendChild(website);
+  
+		// Add other info
+		const otherInfo = document.createElement('p');
+		otherInfo.textContent = `Info: ${member.other_info}`;
+		memberCard.appendChild(otherInfo);
+  
+		// Append the card to the container
+		membersContainer.appendChild(memberCard);
+	  });
+	} catch (error) {
+	  console.error("Error fetching member data:", error);
+	}
+  }
+  
+  // Call the function to fetch and display member data
+  fetchMemberData();
+  

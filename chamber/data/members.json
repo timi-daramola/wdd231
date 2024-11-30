@@ -1,0 +1,58 @@
+[
+    {
+		"names": "Olaoluwa INC",
+		"addresses": "Ikeja, Lagos",
+		"phone": 9905552231,
+		"website": "www.olaoluwainc.com",
+		"image": "#",
+		"membership": 1
+	},
+	{
+        "names": "Ekenedilichuku LTD",
+		"addresses": "Alaba, Lagos",
+		"phone": 9826313783,
+		"website": "www.ekenechukwu.com",
+		"image": "#",
+		"membership": 1
+	},
+	{
+		"names": "Danjuma Enterprise",
+		"addresses": "Ojuelegba, Lagos",
+		"phone": 9728263828,
+		"website": "www.danjumaent.com",
+		"image": "#",
+		"membership": 2
+	},
+	{
+		"names": "Okanlawon Energy INC",
+		"addresses": "Ebute meta, Lagos",
+		"phone": 8623362697,
+		"website": "www.okanlawon.com",
+		"image": "#",
+		"membership": 3
+	},
+	{
+		"names": "EA Okorocha Enterprise",
+		"addresses": "Allen Avenue, Lagos",
+		"phone": 78273839720,
+		"website": "www.eaokorocha.com",
+		"image": "#",
+		"membership": 2
+	},
+	{
+		"names": "Makinwa Finance",
+		"addresses": "Victoria Island, Lagos",
+		"phone": 6828996299,
+		"website": "www.makinwatech.com",
+		"image": "#",
+		"membership": 3
+	},
+	{
+		"names": "Abdulrahman Investments",
+		"addresses": "Gbagada, Lagos",
+		"phone": 5773982628,
+		"website": "www.abdulrahman.com",
+		"image": "#",
+		"membership": 3
+	}
+]
