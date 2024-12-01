@@ -153,22 +153,22 @@ header p{
 
 .socials {
     display: flex;
-    margin-left: 14rem;
+    margin-left: 8rem;
     padding-top: 15px;
 }
 
 .facebook {
-    width: 35px;
+    width: 45px;
     padding: 5px;
 }
 
 .twitter {
-    width: 35px;
+    width: 45px;
     padding: 5px;
 }
 
 .instagram {
-    width: 35px;
+    width: 45px;
     padding: 5px;
 }
 
