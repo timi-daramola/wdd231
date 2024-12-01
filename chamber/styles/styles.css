@@ -123,6 +123,7 @@ header p{
 
 #members-container{
     display: flex;
+    margin-left: -60px;
 }
 
 .member-list {
@@ -138,28 +139,6 @@ header p{
 
 .business_name {
     margin-bottom: -5px;
-}
-
-.second_column {
-    margin-top: 20rem;
-    width: 316.6px;
-    height: 250px;
-    border: 2px solid #c3c3c3;
-    background-color: #c3c3c3;
-    margin-right: 10px;
-    border-radius: 10px;
-    text-align: center;
-}
-
-.third_column {
-    margin-top: 20rem;
-    width: 316.6px;
-    height: 250px;
-    border: 2px solid #c3c3c3;
-    background-color: #c3c3c3;
-    margin-right: 10px;
-    border-radius: 10px;
-    text-align: center;
 }
 
 .footer-container {
