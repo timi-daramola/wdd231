@@ -29,5 +29,13 @@ function displayMembers(members) {
 	}
 }
 
+function toggleBar() {
+	var navBar = document.getElementsByClassName("navigation");
+	if (navBar.style.display === "block") {
+		navBar.style.display = "none";
+	} else {
+		navBar.style.display = "block";
+	}
+}
 
 fetchMembers(); // Initial call to display the members
