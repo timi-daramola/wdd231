@@ -4,23 +4,24 @@ body {
 }
 
 header {
- display: flex;
- margin-top: 20px;
- background-color: #c3c3c3;
- margin-right: 68px;
+    width: 26rem;
+    display: flex;
+    margin-top: 20px;
+    background-color: #c3c3c3;
+    margin-right: 68px;
 }
 
 header h1{
-    font-size: 20px;
-    margin-top: 15px;
-   }
+    font-size: 10px;
+    margin-top: 15px; 
+}
 
 header p{
     margin-top: -10px;
 }
 
 .logo {
-    width: 60px;
+    width: 40px;
     padding: 10px;
     margin-top: 5px;
 }
@@ -31,22 +32,17 @@ header p{
     word-spacing: 10px;
 }
 
-.navigation a {
-    text-decoration: none;
-    color: #000;
-}
-
 .hero img {
     position: absolute;
     display: block;
-    width: 62.5rem;
+    width: 25.8rem;
     height: auto;
 }
 
 .btn-hero {
     position: absolute;
-    margin-top: 14rem;
-    margin-left: 50rem;
+    margin-top: 30px;
+    margin-left: 17rem;
     height: 18px;
     background-color: #c3c3c3;
     padding: 10px;
@@ -60,75 +56,61 @@ header p{
     text-align: center;
 }
 
-.events {
-    margin-top: 20rem;
-    width: 450px;
-    height: 150px;
-    border: 2px solid #c3c3c3;
-    background-color: #c3c3c3;
-    margin-right: 10px;
-    margin-left: -60px;
+.first_block {
+    display: block;
+    margin-bottom: 20px;
+    justify-content: center;
 }
 
-.inner_paragraph {
-    font-size: 20px;
-    margin-top: -2px;
-    background-color: #000;
-    color: #918e8e;
-    padding: 2px;
-    padding-left: 10px;
+.events {
+    margin-top: 7.5rem;
+    width: 410px;
+    height: 180px;
+    border: 2px solid #c3c3c3;
+    background-color: #c3c3c3;
 }
 
 .weather {
-    margin-top: 20rem;
-    width: 250px;
-    height: 150px;
+    margin-top: 1.3rem;
+    width: 410px;
+    height: 180px;
     border: 2px solid #c3c3c3;
     background-color: #c3c3c3;
     margin-right: 10px;
 }
 
 .weather_forcast {
-    margin-top: 20rem;
-    width: 250px;
-    height: 150px;
+    margin-top: 1.3rem;
+    width: 410px;
+    height: 180px;
     border: 2px solid #c3c3c3;
     background-color: #c3c3c3;
     margin-right: 10px;
 }
 
-.first_column {
-    margin-top: 20rem;
-    width: 316.6px;
-    height: 250px;
-    border: 2px solid #c3c3c3;
-    background-color: #c3c3c3;
-    margin-right: 10px;
-    margin-left: -60px;
-    border-radius: 10px;
+.inner_paragraph {
+    font-size: 30px;
+    margin-top: -2px;
+    background-color: #000;
+    color: #918e8e;
+    padding: 2px;
+    padding-left: 10px;
     text-align: center;
 }
 
-.first_block {
-    display: flex;
-    margin-bottom: 20px;
-    justify-content: center;
-}
-
 .second_block {
-    display: flex;
+    display: block;
     margin-bottom: 40px;
     justify-content: center;
 }
 
 #members-container{
-    display: flex;
-    margin-left: -60px;
+    display: block;
 }
 
 .member-list {
     margin-top: 10px;
-    width: 316.6px;
+    width: 410px;
     height: 250px;
     border: 2px solid #c3c3c3;
     background-color: #c3c3c3;
