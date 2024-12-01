@@ -124,8 +124,8 @@ header p{
 }
 
 .footer-container {
-    display: flex;
-    width: 93%;
+    display: block;
+    width: 410px;
     margin-top: 30px;
     background-color: #c3c3c3;
 }
