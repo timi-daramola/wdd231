@@ -69,6 +69,7 @@
             height: 180px;
             border: 2px solid #c3c3c3;
             background-color: #c3c3c3;
+            margin: auto;
         }
         
         .weather {
@@ -107,6 +108,7 @@
         
         #members-container{
             display: block;
+            margin: auto;
         }
         
         .member-list {
