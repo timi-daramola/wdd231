@@ -139,14 +139,16 @@
         
         .footer-para2 {
             margin-top: 20px;
+            margin-left: -0px;
             padding-left: 20px;
             width: 200px;
         }
         
         .year-update {
             margin-top: -10px;
+            margin-left: 10px;
             padding-bottom: 20px;
-            padding-left: 20px;
+            padding-left: 10px;
         }
         
         .footer-title {
