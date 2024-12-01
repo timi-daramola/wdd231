@@ -1,0 +1,385 @@
+@media only screen and (max-width: 600px) {
+    body {
+        background-color: skyblue;
+        max-width: 80%;
+        margin: auto;
+    
+        header {
+            width: 26rem;
+            display: flex;
+            margin-top: 20px;
+            background-color: #c3c3c3;
+            margin-right: 68px;
+        }
+        
+        header h1{
+            font-size: 10px;
+            margin-top: 15px; 
+        }
+        
+        header p{
+            margin-top: -10px;
+        }
+        
+        .logo {
+            width: 40px;
+            padding: 10px;
+            margin-top: 5px;
+        }
+        
+        .navigation {
+            margin-left: 30rem;
+            margin-top: 20px;
+            word-spacing: 10px;
+        }
+        
+        .hero img {
+            position: absolute;
+            display: block;
+            width: 25.8rem;
+            height: auto;
+        }
+        
+        .btn-hero {
+            position: absolute;
+            margin-top: 30px;
+            margin-left: 17rem;
+            height: 18px;
+            background-color: #c3c3c3;
+            padding: 10px;
+            border-radius: 5px;
+            color: #000;
+            text-align: center;
+            text-decoration: none;
+        }
+        
+        .btn-hero a {
+            text-align: center;
+        }
+        
+        .first_block {
+            display: block;
+            margin-bottom: 20px;
+            justify-content: center;
+        }
+        
+        .events {
+            margin-top: 7.5rem;
+            width: 410px;
+            height: 180px;
+            border: 2px solid #c3c3c3;
+            background-color: #c3c3c3;
+        }
+        
+        .weather {
+            margin-top: 1.3rem;
+            width: 410px;
+            height: 180px;
+            border: 2px solid #c3c3c3;
+            background-color: #c3c3c3;
+            margin-right: 10px;
+        }
+        
+        .weather_forcast {
+            margin-top: 1.3rem;
+            width: 410px;
+            height: 180px;
+            border: 2px solid #c3c3c3;
+            background-color: #c3c3c3;
+            margin-right: 10px;
+        }
+        
+        .inner_paragraph {
+            font-size: 30px;
+            margin-top: -2px;
+            background-color: #000;
+            color: #918e8e;
+            padding: 2px;
+            padding-left: 10px;
+            text-align: center;
+        }
+        
+        .second_block {
+            display: block;
+            margin-bottom: 40px;
+            justify-content: center;
+        }
+        
+        #members-container{
+            display: block;
+        }
+        
+        .member-list {
+            margin-top: 10px;
+            width: 410px;
+            height: 250px;
+            border: 2px solid #c3c3c3;
+            background-color: #c3c3c3;
+            margin-right: 10px;
+            border-radius: 10px;
+            text-align: center;
+        }
+        
+        .footer-container {
+            display: block;
+            width: 410px;
+            margin-top: 30px;
+            background-color: #c3c3c3;
+            height: 300px;
+        }
+        
+        .footer-para1 {
+            padding-top: 45px;
+            margin-top: 40px;
+            margin-left: 20px;
+            width: 200px;
+        }
+        
+        .footer-para2 {
+            margin-top: 20px;
+            padding-left: 20px;
+            width: 200px;
+        }
+        
+        .year-update {
+            margin-top: -10px;
+            padding-bottom: 20px;
+            padding-left: 20px;
+        }
+        
+        .footer-title {
+            margin-bottom: -80px;
+            margin-left: 20px;
+        }
+        
+        .socials {
+            display: flex;
+            margin-left: 8rem;
+            padding-top: 15px;
+        }
+        
+        .facebook {
+            width: 45px;
+            padding: 5px;
+        }
+        
+        .twitter {
+            width: 45px;
+            padding: 5px;
+        }
+        
+        .instagram {
+            width: 45px;
+            padding: 5px;
+        }
+        
+        .sociallinks img {
+            max-width: 30px;
+        }
+        
+        .sociallinks a {
+            text-decoration: none;
+        }
+  }
+}
+
+
+body {
+    width: 80%;
+    margin: auto;
+}
+
+header {
+ display: flex;
+ margin-top: 20px;
+ background-color: #c3c3c3;
+ margin-right: 68px;
+}
+
+header h1{
+    font-size: 20px;
+    margin-top: 15px; 
+}
+
+header p{
+    margin-top: -10px;
+}
+
+.logo {
+    width: 60px;
+    padding: 10px;
+    margin-top: 5px;
+}
+
+.navigation {
+    margin-left: 30rem;
+    margin-top: 20px;
+    word-spacing: 10px;
+}
+
+.navigation a {
+    text-decoration: none;
+    color: #000;
+}
+
+.hero img {
+    position: absolute;
+    display: block;
+    width: 62.5rem;
+    height: auto;
+}
+
+.btn-hero {
+    position: absolute;
+    margin-top: 14rem;
+    margin-left: 50rem;
+    height: 18px;
+    background-color: #c3c3c3;
+    padding: 10px;
+    border-radius: 5px;
+    color: #000;
+    text-align: center;
+    text-decoration: none;
+}
+
+.btn-hero a {
+    text-align: center;
+}
+
+.events {
+    margin-top: 20rem;
+    width: 450px;
+    height: 150px;
+    border: 2px solid #c3c3c3;
+    background-color: #c3c3c3;
+    margin-right: 10px;
+    margin-left: -60px;
+}
+
+.inner_paragraph {
+    font-size: 20px;
+    margin-top: -2px;
+    background-color: #000;
+    color: #918e8e;
+    padding: 2px;
+    padding-left: 10px;
+}
+
+.weather {
+    margin-top: 20rem;
+    width: 250px;
+    height: 150px;
+    border: 2px solid #c3c3c3;
+    background-color: #c3c3c3;
+    margin-right: 10px;
+}
+
+.weather_forcast {
+    margin-top: 20rem;
+    width: 250px;
+    height: 150px;
+    border: 2px solid #c3c3c3;
+    background-color: #c3c3c3;
+    margin-right: 10px;
+}
+
+.first_column {
+    margin-top: 20rem;
+    width: 316.6px;
+    height: 250px;
+    border: 2px solid #c3c3c3;
+    background-color: #c3c3c3;
+    margin-right: 10px;
+    margin-left: -60px;
+    border-radius: 10px;
+    text-align: center;
+}
+
+.first_block {
+    display: flex;
+    margin-bottom: 20px;
+    justify-content: center;
+}
+
+.second_block {
+    display: flex;
+    margin-bottom: 40px;
+    justify-content: center;
+}
+
+#members-container{
+    display: flex;
+    margin-left: -60px;
+}
+
+.member-list {
+    margin-top: 10px;
+    width: 316.6px;
+    height: 250px;
+    border: 2px solid #c3c3c3;
+    background-color: #c3c3c3;
+    margin-right: 10px;
+    border-radius: 10px;
+    text-align: center;
+}
+
+.business_name {
+    margin-bottom: -5px;
+}
+
+.footer-container {
+    display: flex;
+    width: 93%;
+    margin-top: 30px;
+    background-color: #c3c3c3;
+}
+
+.footer-para1 {
+    margin-top: 40px;
+    margin-left: 20px;
+    width: 200px;
+}
+
+.footer-para2 {
+    margin-left: 11rem;
+    width: 200px;
+}
+
+.year-update {
+    margin-top: 3.5rem;
+    margin-left: -12.5rem;
+}
+
+.footer-title {
+    margin-bottom: -60px;
+    margin-left: 20px;
+}
+
+.socials {
+    display: flex;
+    margin-left: 14rem;
+    padding-top: 15px;
+}
+
+.facebook {
+    width: 35px;
+    padding: 5px;
+}
+
+.twitter {
+    width: 35px;
+    padding: 5px;
+}
+
+.instagram {
+    width: 35px;
+    padding: 5px;
+}
+
+.sociallinks img {
+    max-width: 30px;
+}
+
+.sociallinks a {
+    text-decoration: none;
+}
