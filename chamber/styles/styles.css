@@ -60,19 +60,6 @@ header p{
     text-align: center;
 }
 
-.first_block {
-    display: flex;
-    margin-bottom: 20px;
-    justify-content: center;
-}
-
-.second_block {
-    margin-top: -20rem;
-    display: flex;
-    margin-bottom: 20px;
-    justify-content: center;
-}
-
 .events {
     margin-top: 20rem;
     width: 450px;
@@ -118,6 +105,33 @@ header p{
     background-color: #c3c3c3;
     margin-right: 10px;
     margin-left: -60px;
+    border-radius: 10px;
+    text-align: center;
+}
+
+.first_block {
+    display: flex;
+    margin-bottom: 20px;
+    justify-content: center;
+}
+
+.second_block {
+    display: flex;
+    margin-bottom: 40px;
+    justify-content: center;
+}
+
+#members-container{
+    display: flex;
+}
+
+.member-list {
+    margin-top: 10px;
+    width: 316.6px;
+    height: 250px;
+    border: 2px solid #c3c3c3;
+    background-color: #c3c3c3;
+    margin-right: 10px;
     border-radius: 10px;
     text-align: center;
 }
