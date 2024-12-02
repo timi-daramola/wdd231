@@ -358,6 +358,7 @@ header p{
     display: flex;
     margin-bottom: 20px;
     justify-content: center;
+    margin-left: -50px;
 }
 
 .second_block {
