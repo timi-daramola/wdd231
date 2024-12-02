@@ -69,6 +69,7 @@
     }
     
     .first_block {
+        margin-top: 8rem;
         display: block;
         margin-bottom: 20px;
         justify-content: center;
