@@ -8,9 +8,8 @@ async function fetchMembers() {
 	displayMembers(members);
 }
 
-
+const newValue = [];
 function displayMembers(members) {
-		const newValue = [];
 		const container = document.getElementById('members-container');
 		members.forEach(member => {
 		
@@ -24,7 +23,8 @@ function displayMembers(members) {
 	for(let i=0; i<3; i++){
 		const postElement = document.createElement('div');
 		postElement.classList.add('member-list')
-		postElement.innerHTML = newValue[i];
+		const random = Math.floor(Math.random() * newValue.length);
+		postElement.innerHTML = (random, newValue[random]);
 		container.appendChild(postElement);
 	}
 }
