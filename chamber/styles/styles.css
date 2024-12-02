@@ -110,6 +110,26 @@
         padding-left: 10px;
         text-align: center;
     }
+
+    .current_paragraph {
+        font-size: 30px;
+        margin-top: -2px;
+        background-color: #000;
+        color: #918e8e;
+        padding: 2px;
+        padding-left: 10px;
+        text-align: center;
+    }
+
+    .forcast_paragraph {
+        font-size: 30px;
+        margin-top: -2px;
+        background-color: #000;
+        color: #918e8e;
+        padding: 2px;
+        padding-left: 10px;
+        text-align: center;
+    }
     
     .second_block {
         display: block;
@@ -277,6 +297,24 @@ header p{
 }
 
 .inner_paragraph {
+    font-size: 20px;
+    margin-top: -2px;
+    background-color: #000;
+    color: #918e8e;
+    padding: 2px;
+    padding-left: 10px;
+}
+
+.current_paragraph {
+    font-size: 20px;
+    margin-top: -2px;
+    background-color: #000;
+    color: #918e8e;
+    padding: 2px;
+    padding-left: 10px;
+}
+
+.forcast_paragraph {
     font-size: 20px;
     margin-top: -2px;
     background-color: #000;
