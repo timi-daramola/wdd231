@@ -23,74 +23,76 @@
     <script src="scripts/scripts.js" defer></script>
 </head>
 <body>
-    <header>
-        <div class="top">
-            <img class="logo" src="images/logo.jpg" alt="logo">
-        </div>
-        <div class="site_name">
-            <h1>T-Rafting</h1>
-            <p>Chamber of commerce</p>
-        </div>
-        <a id="toggle-button" href="" onclick="toggleBar()">☰</a>
-        <nav class="navigation">
-            <a href="#">Home</a>
-            <a href="#">Discovery</a>
-            <a href="#">Directory</a>
-            <a href="#">Join</a>
-        </nav>
-    </header>
-    <main>
-        <div class="hero">
-            <img class="hero-image" src="images/rafting14_600.jpg" alt="rafting image">
-            <h1>T-rafting</h1>
-            <a href="" class="btn-hero">Keynot Tickets</a>
-        </div>
-        <section class="first_block">
-            <div class="events">
-                <p class="inner_paragraph">Eevents</p>
-                <div id="weatherInfo"></div>
+    <div class="container-view">
+        <header>
+            <div class="top">
+                <img class="logo" src="images/logo.jpg" alt="logo">
             </div>
-            <div class="weather">
-                <p class="inner_paragraph">Current Weather</p>
-                <div class="weather_container">
-                    <img class="weather_image" src="images/1530391_weather_clouds_sun_sunny_icon.svg" alt="Weather Icon">
+            <div class="site_name">
+                <h1>T-Rafting</h1>
+                <p>Chamber of commerce</p>
+            </div>
+            <a id="toggle-button" href="" onclick="toggleBar()">☰</a>
+            <nav class="navigation">
+                <a href="#">Home</a>
+                <a href="#">Discovery</a>
+                <a href="#">Directory</a>
+                <a href="#">Join</a>
+            </nav>
+        </header>
+        <main>
+            <div class="hero">
+                <img class="hero-image" src="images/rafting14_600.jpg" alt="rafting image">
+                <h1>T-rafting</h1>
+                <a href="" class="btn-hero">Keynot Tickets</a>
+            </div>
+            <section class="first_block">
+                <div class="events">
+                    <p class="inner_paragraph">Eevents</p>
+                    <div id="weatherInfo"></div>
                 </div>
+                <div class="weather">
+                    <p class="inner_paragraph">Current Weather</p>
+                    <div class="weather_container">
+                        <img class="weather_image" src="images/1530391_weather_clouds_sun_sunny_icon.svg" alt="Weather Icon">
+                    </div>
+                </div>
+                <div class="weather_forcast">
+                    <p class="inner_paragraph">Weather Forcast</p>
+                </div>
+            </section>
+            <section class="second_block">
+                <div id="members-container">
+                    <!-- Member information will be displayed here -->
+                </div>
+            </section>
+        </main>
+        <footer>
+            <h4 class="footer-title">T-rafting Chamber of Commerce</h4>
+            <div class="footer-container">
+                <p class="footer-para1">
+                    10 Ikeja Road
+                    Ikeja, Lagos 23402
+                    info@t-raftingcc.ng
+                    (+234) 999-777-2222</p>
+                <div class="socials">
+                    <a href="https://facebook.com" class="facebook">
+                        <img src="images/5365678_fb_facebook_facebook_logo_icon.svg" alt="Facebook">
+                    </a>
+                    <a href="https://twitter.com" class="twitter">
+                        <img src="images/5296516_tweet_twitter_twitter_logo_icon.svg" alt="Twitter">
+                    </a>
+                    <a href="https://instragram.com" class="instagram">
+                        <img src="images/6929237_instagram_icon.svg" alt="Instagram">
+                    </a>
+                </div>
+                <p class="footer-para2">
+                    WDD21 Class Project
+                    Timilehin Daramola
+                    <p class="year-update" id="currentyear">©<span>T-Raftin Chamber of Commerce</span></p>
+                </p>
             </div>
-            <div class="weather_forcast">
-                <p class="inner_paragraph">Weather Forcast</p>
-            </div>
-        </section>
-        <section class="second_block">
-            <div id="members-container">
-                <!-- Member information will be displayed here -->
-            </div>
-        </section>
-    </main>
-    <footer>
-        <h4 class="footer-title">T-rafting Chamber of Commerce</h4>
-        <div class="footer-container">
-            <p class="footer-para1">
-                10 Ikeja Road
-                Ikeja, Lagos 23402
-                info@t-raftingcc.ng
-                (+234) 999-777-2222</p>
-            <div class="socials">
-                <a href="https://facebook.com" class="facebook">
-                    <img src="images/5365678_fb_facebook_facebook_logo_icon.svg" alt="Facebook">
-                </a>
-                <a href="https://twitter.com" class="twitter">
-                    <img src="images/5296516_tweet_twitter_twitter_logo_icon.svg" alt="Twitter">
-                </a>
-                <a href="https://instragram.com" class="instagram">
-                    <img src="images/6929237_instagram_icon.svg" alt="Instagram">
-                </a>
-            </div>
-            <p class="footer-para2">
-                WDD21 Class Project
-                Timilehin Daramola
-                <p class="year-update" id="currentyear">©<span>T-Raftin Chamber of Commerce</span></p>
-            </p>
-        </div>
-    </footer>
+        </footer>
+    </div>
 </body>
 </html>
