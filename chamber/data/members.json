@@ -5,7 +5,7 @@
 		"phone": 9905552231,
 		"website": "www.olaoluwainc.com",
 		"image": "#",
-		"membership": 1
+		"membership": "Member"
 	},
 	{
         "name": "Ekenedilichuku LTD",
@@ -13,7 +13,7 @@
 		"phone": 9826313783,
 		"website": "www.ekenechukwu.com",
 		"image": "#",
-		"membership": 1
+		"membership": "Silver"
 	},
 	{
 		"name": "Danjuma Enterprise",
@@ -21,7 +21,7 @@
 		"phone": 9728263828,
 		"website": "www.danjumaent.com",
 		"image": "#",
-		"membership": 2
+		"membership": "Gold"
 	},
 	{
 		"name": "Okanlawon Energy INC",
@@ -29,7 +29,7 @@
 		"phone": 8623362697,
 		"website": "www.okanlawon.com",
 		"image": "#",
-		"membership": 3
+		"membership": "Silver"
 	},
 	{
 		"name": "EA Okorocha Enterprise",
@@ -37,7 +37,7 @@
 		"phone": 78273839720,
 		"website": "www.eaokorocha.com",
 		"image": "#",
-		"membership": 2
+		"membership": "Member"
 	},
 	{
 		"name": "Makinwa Finance",
@@ -45,7 +45,7 @@
 		"phone": 6828996299,
 		"website": "www.makinwatech.com",
 		"image": "#",
-		"membership": 3
+		"membership": "Gold"
 	},
 	{
 		"name": "Abdulrahman Investments",
@@ -53,7 +53,7 @@
 		"phone": 5773982628,
 		"website": "www.abdulrahman.com",
 		"image": "#",
-		"membership": 3
+		"membership": "Silver"
 	}
 ]
 
