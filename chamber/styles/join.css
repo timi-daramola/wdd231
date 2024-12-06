@@ -91,10 +91,7 @@
         transition: all 0.3s ease;
         cursor: pointer;
     }
-    .card:hover {
-        background-color: #f5f5f5;
-        transform: scale(1.05);
-    }
+
     .card h2 {
         text-align: center;
     }
@@ -265,10 +262,7 @@
         transition: all 0.3s ease;
         cursor: pointer;
     }
-    .card:hover {
-        background-color: #f5f5f5;
-        transform: scale(1.05);
-    }
+
     .card h2 {
         text-align: center;
     }
