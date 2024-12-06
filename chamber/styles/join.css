@@ -32,13 +32,13 @@
         margin-top: 5px;
     }
 
-    .navigation {
+    .dropdown-content {
         margin-left: 30rem;
         margin-top: 20px;
         word-spacing: 10px;
     }
 
-    .navigation a {
+    .dropdown-content a {
         text-decoration: none;
         color: #000;
     }
@@ -46,6 +46,11 @@
     h1 {
         text-align: center;
     }
+
+    #myBtn {
+        display: none;
+    }
+
     .form-container {
         display: grid;
         gap: 15px;
