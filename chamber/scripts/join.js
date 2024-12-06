@@ -7,6 +7,18 @@ function closeModal(id) {
     document.getElementById(id).style.display = "none";
 }
 
+function toggleBar(){
+    const toggleButton = document.getElementById('navigate');
+    toggleButton.classList.toggle("show");
+}
+
+
+document.getElementById("myBtn").onclick = function() {myFunction()};
+
+function myFunction() {
+  document.getElementById("myDropdown").classList.toggle("show");
+}
+
 const params = new URLSearchParams(window.location.search);
 document.getElementById('displayFirstName').textContent = params.get('first-name');
 document.getElementById('displayLastName').textContent = params.get('last-name');
