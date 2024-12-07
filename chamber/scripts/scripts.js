@@ -66,15 +66,17 @@ const API_KEY = '5f274f0f3d95c8849cc0b8254d08ea2a';
                 const currentDesc = currentData.weather[0].description;
 
                 // Get 3-day forecast (every 8th entry for a 3-day forecast)
-                const forecastList = forecastData.list.filter((item, index) => index % 8 === 0); // Every 8 hours (3 days)
+                const forecastList = forecastData.list.filter((item, index) => index % 18 === 0); // Every 8 hours (3 days)
                 
                 // Generate HTML content
                 let weatherHTML = `
-                    <h2>Current Weather in ${CITY}:</h2>
+				<div class="weather-description">
+					<h2>Current Weather in ${CITY}:</h2>
                     <p>Temperature: ${currentTemp}°C</p>
                     <p>Description: ${currentDesc.charAt(0).toUpperCase() + currentDesc.slice(1)}</p>
-                    <div class="forecast">
-                        <h3>3-Day Forecast:</h3>
+				</div>
+				<div class="forecast">
+                        <h3>3-Day Forecast:</h3>                   
                 `;
                 
                 forecastList.forEach((forecast, index) => {
