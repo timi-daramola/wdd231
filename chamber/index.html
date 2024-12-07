@@ -32,13 +32,15 @@
                 <h1>T-Rafting</h1>
                 <p>Chamber of commerce</p>
             </div>
-            <a id="toggle-button" href="" onclick="toggleBar()">☰</a>
-            <nav class="navigation">
-                <a href="#">Home</a>
-                <a href="#">Discovery</a>
-                <a href="#">Directory</a>
-                <a href="#">Join</a>
-            </nav>
+            <div class="dropdown">
+                <button id="myBtn" class="dropbtn">☰</button>
+                <div id="myDropdown" class="dropdown-content">
+                    <a href="#">Home</a>
+                    <a href="#">Discovery</a>
+                    <a href="#">Directory</a>
+                    <a href="#">Join</a>
+                </div>
+            </div>
         </header>
         <main>
             <div class="hero">
@@ -55,7 +57,8 @@
                 <div class="weather">
                     <p class="current_paragraph">Current Weather</p>
                     <div class="weather_container">
-                        <img class="weather_image" src="images/1530391_weather_clouds_sun_sunny_icon.svg" alt="Weather Icon">
+                        <img class="weather_image" src="images/1530391_weather_clouds_sun_sunny_icon.png" alt="Weather Icon">
+                        <div id="weatherContainer"></div>
                     </div>
                 </div>
                 <div class="weather_forcast">

@@ -5,7 +5,7 @@
 		"phone": 9905552231,
 		"website": "www.olaoluwainc.com",
 		"image": "#",
-		"membership": "Member"
+		"membership": "Gold"
 	},
 	{
         "name": "Ekenedilichuku LTD",
@@ -37,7 +37,7 @@
 		"phone": 78273839720,
 		"website": "www.eaokorocha.com",
 		"image": "#",
-		"membership": "Member"
+		"membership": "Gold"
 	},
 	{
 		"name": "Makinwa Finance",
@@ -45,7 +45,7 @@
 		"phone": 6828996299,
 		"website": "www.makinwatech.com",
 		"image": "#",
-		"membership": "Gold"
+		"membership": "Silver"
 	},
 	{
 		"name": "Abdulrahman Investments",
@@ -53,7 +53,7 @@
 		"phone": 5773982628,
 		"website": "www.abdulrahman.com",
 		"image": "#",
-		"membership": "Silver"
+		"membership": "Gold"
 	}
 ]
 
