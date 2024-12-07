@@ -12,13 +12,16 @@ const newValue = [];
 function displayMembers(members) {
 		const container = document.getElementById('members-container');
 		members.forEach(member => {
+		if(member.membership === "silver" || member.membership === "gold"){
+			newValue.push(
+				`<img src="images/${member.image}">
+				<h3>${member.name}</h3>
+				<p>${member.address}</p>
+				<p>${member.phone}</p>
+				<a href="">${member.website}</a>
+				<p>${member.membership}</p>`);
+		}
 		
-		newValue.push(`<img src="images/${member.image}">
-			<h3>${member.name}</h3>
-			<p>${member.address}</p>
-			<p>${member.phone}</p>
-			<a href="">${member.website}</a>
-			<p>${member.membership}</p>`);
 		
 	});
 	for(let i=0; i<3; i++){
