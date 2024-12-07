@@ -3,8 +3,7 @@
         background-color: skyblue;
         max-width: 90%;
         margin: auto;
-  }
-  .container-view {
+    }
     header {
         width: 26rem;
         display: flex;
@@ -14,8 +13,8 @@
     }
 
     .weather-description {
-        margin-left: 5rem;
-        margin-top: -5rem;
+        margin-left: 7rem;
+        margin-top: -6rem;
     }
 
     .weather-description, h1 {
@@ -37,22 +36,22 @@
         text-decoration: none;
         color: #000;
     }
-    
+
     header h1{
         font-size: 10px;
         margin-top: 15px; 
     }
-    
+
     header p{
         margin-top: -10px;
     }
-    
+
     .logo {
         width: 40px;
         padding: 10px;
         margin-top: 5px;
     }
-    
+
     .navigation {
         overflow: hidden;
     }
@@ -65,14 +64,14 @@
         border: none;
         cursor: pointer;
         margin-left: 10rem;
-      }
-      
-      .dropdown {
+    }
+    
+    .dropdown {
         position: relative;
         display: inline-block;
-      }
-      
-      .dropdown-content {
+    }
+    
+    .dropdown-content {
         display: none;
         position: absolute;
         background-color: #f9f9f9;
@@ -80,19 +79,19 @@
         margin-left: 3.5rem;
         min-width: 160px;
         box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
-      }
-      
-      .dropdown-content a {
+    }
+    
+    .dropdown-content a {
         color: black;
         padding: 12px 16px;
         text-decoration: none;
         display: block;
-      }
-      
-      .dropdown-content a:hover {background-color: #f1f1f1}
-      
-      .show {display:block;}
+    }
     
+    .dropdown-content a:hover {background-color: #f1f1f1}
+    
+    .show {display:block;}
+
     #toggle-button {
         display: block;
         font-size: 2rem;
@@ -104,11 +103,12 @@
         margin-left: 14rem;
         margin-top: 10px;
     }
-    
+
     .weather_image {
-        max-width: 50px;
+        max-width: 100px;
         height: auto;
         padding-left: 10px;
+        margin-top: -2.5rem;
     }
 
     .hero img {
@@ -117,7 +117,7 @@
         width: 25.8rem;
         height: auto;
     }
-    
+
     .btn-hero {
         position: absolute;
         margin-top: 30px;
@@ -130,18 +130,18 @@
         text-align: center;
         text-decoration: none;
     }
-    
+
     .btn-hero a {
         text-align: center;
     }
-    
+
     .first_block {
         margin-top: 8rem;
         display: block;
         margin-bottom: 20px;
         justify-content: center;
     }
-    
+
     .events {
         margin-top: 7.5rem;
         width: 410px;
@@ -150,7 +150,7 @@
         background-color: #c3c3c3;
         margin: auto;
     }
-    
+
     .weather {
         margin-top: 1.3rem;
         width: 410px;
@@ -159,7 +159,7 @@
         background-color: #c3c3c3;
         margin-right: 10px;
     }
-    
+
     .weather_forcast {
         margin-top: 1.3rem;
         width: 410px;
@@ -168,7 +168,7 @@
         background-color: #c3c3c3;
         margin-right: 10px;
     }
-    
+
     .inner_paragraph {
         font-size: 30px;
         margin-top: -2px;
@@ -198,18 +198,18 @@
         padding-left: 10px;
         text-align: center;
     }
-    
+
     .second_block {
         display: block;
         margin-bottom: 40px;
         justify-content: center;
     }
-    
+
     #members-container{
         display: block;
         margin: auto;
     }
-    
+
     .member-list {
         margin-top: 10px;
         width: 410px;
@@ -220,7 +220,7 @@
         border-radius: 10px;
         text-align: center;
     }
-    
+
     .footer-container {
         display: block;
         width: 410px;
@@ -228,62 +228,61 @@
         background-color: #c3c3c3;
         height: 300px;
     }
-    
+
     .footer-para1 {
         padding-top: 45px;
         margin-top: 40px;
         margin-left: 20px;
         width: 200px;
     }
-    
+
     .footer-para2 {
         margin-top: 20px;
         margin-left: -0px;
         padding-left: 20px;
         width: 200px;
     }
-    
+
     .year-update {
         margin-top: -10px;
         margin-left: 10px;
         padding-bottom: 20px;
         padding-left: 10px;
     }
-    
+
     .footer-title {
         margin-bottom: -80px;
         margin-left: 20px;
     }
-    
+
     .socials {
         display: flex;
         margin-left: 8rem;
         padding-top: 15px;
     }
-    
+
     .facebook {
         width: 45px;
         padding: 5px;
     }
-    
+
     .twitter {
         width: 45px;
         padding: 5px;
     }
-    
+
     .instagram {
         width: 45px;
         padding: 5px;
     }
-    
+
     .sociallinks img {
         max-width: 30px;
     }
-    
+
     .sociallinks a {
         text-decoration: none;
     }
-  }
   
 }
 
