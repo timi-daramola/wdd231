@@ -12,17 +12,13 @@ const newValue = [];
 function displayMembers(members) {
 		const container = document.getElementById('members-container');
 		members.forEach(member => {
-		if(member.membership === "silver" || member.membership === "gold"){
-			newValue.push(
+            newValue.push(
 				`<img src="images/${member.image}">
 				<h3>${member.name}</h3>
 				<p>${member.address}</p>
 				<p>${member.phone}</p>
 				<a href="">${member.website}</a>
 				<p>${member.membership}</p>`);
-		}
-		
-		
 	});
 	for(let i=0; i<3; i++){
 		const postElement = document.createElement('div');
@@ -108,6 +104,5 @@ const API_KEY = '5f274f0f3d95c8849cc0b8254d08ea2a';
 
         // Load weather data on page load
         
-
 fetchMembers(); // Initial call to display the members
-window.onload = getWeatherData;
+getWeatherData();
