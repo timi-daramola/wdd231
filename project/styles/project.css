@@ -49,11 +49,11 @@ header nav ul li a {
     font-size: 1.1em;
 }
 
-header .search-bar input {
+header{
     padding: 8px;
     border-radius: 5px;
     border: 1px solid #BDC3C7;
-    background-color: #ECF0F1;
+    background-color: #2C3E50;
     font-size: 1em;
 }
 
@@ -75,6 +75,7 @@ h2 {
 .featured .content-item {
     background-color: white;
     padding: 15px;
+    height: 250px;
     border-radius: 8px;
     margin-bottom: 15px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
@@ -109,11 +110,78 @@ h2 {
     padding: 15px;
     border-radius: 8px;
     margin-bottom: 15px;
+    height: 600px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
 .guide-item h3, .tutorial-item h3 {
     color: #2C3E50;
+}
+
+.tech-news {
+    background-color: #ECF0F1;
+    padding: 30px;
+    margin-top: 30px;
+}
+
+.tech-news h2 {
+    color: #2C3E50;
+    text-align: center;
+    margin-bottom: 20px;
+    font-size: 2em;
+}
+
+.news-container {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.news-item {
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: 30%;
+    margin-bottom: 20px;
+    overflow: hidden;
+}
+
+.news-item img {
+    width: 100%;
+    height: auto;
+    border-bottom: 2px solid #BDC3C7;
+}
+
+.news-content {
+    padding: 15px;
+}
+
+.news-content h3 {
+    color: #2C3E50;
+    font-size: 1.5em;
+    margin-bottom: 15px;
+}
+
+.news-content p {
+    font-size: 1em;
+    color: #34495E;
+    margin-bottom: 15px;
+}
+
+.cta-btn {
+    display: inline-block;
+    background-color: #2C3E50;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 5px;
+    font-weight: bold;
+    text-align: center;
+    text-decoration: none;
+}
+
+.cta-btn:hover {
+    background-color: #34495E;
 }
 
 footer {
