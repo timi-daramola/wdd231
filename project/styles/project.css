@@ -124,20 +124,24 @@ footer {
     display: flex;
 }
 
+.footer-container {
+    margin-left: 2rem;
+}
+
 .footer-grouped {
     display: flex;
     margin-top: 20px;
-    margin-left: 18rem;
+    margin-left: 10rem;
 }
 
 .footer-logo {
     font-size: 12px;
     margin-top: 10px;
-    margin-left: 20px;
+    margin-left: 10px;
 }
 
 .terms-link {
-    padding-left: 20px;
+    padding-left: 10px;
 }
 
 .year-update {
@@ -146,7 +150,6 @@ footer {
 
 .socials {
     display: flex;
-    margin-left: 5rem;
     padding-top: 15px;
 }
 
