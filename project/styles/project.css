@@ -1,0 +1,180 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    background-color: #ECF0F1;
+    color: #2C3E50;
+    max-width: 80%;
+    margin: auto;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+h1, h2, h3 {
+    font-weight: bold;
+}
+
+header {
+    background-color: #2C3E50;
+    color: white;
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header .logo h1 {
+    font-size: 2em;
+}
+
+header nav ul {
+    display: flex;
+    list-style: none;
+}
+
+header nav ul li {
+    margin-left: 12px;
+}
+
+header nav ul li a {
+    color: white;
+    font-weight: bold;
+    font-size: 1.1em;
+}
+
+header .search-bar input {
+    padding: 8px;
+    border-radius: 5px;
+    border: 1px solid #BDC3C7;
+    background-color: #ECF0F1;
+    font-size: 1em;
+}
+
+main {
+    padding: 20px;
+}
+
+h2 {
+    color: #2C3E50;
+    margin-bottom: 10px;
+}
+
+.featured .content-box {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+}
+
+.featured .content-item {
+    background-color: white;
+    padding: 15px;
+    border-radius: 8px;
+    margin-bottom: 15px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.featured .content-item h3 {
+    color: #2C3E50;
+    margin-bottom: 10px;
+}
+
+.cta-btn {
+    display: inline-block;
+    background-color: #2C3E50;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 5px;
+    font-weight: bold;
+    text-align: center;
+    margin-top: 10px;
+}
+
+.cta-btn:hover {
+    background-color: #34495E;
+}
+
+.guides, .tutorials {
+    margin-top: 30px;
+}
+
+.guide-item, .tutorial-item {
+    background-color: white;
+    padding: 15px;
+    border-radius: 8px;
+    margin-bottom: 15px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.guide-item h3, .tutorial-item h3 {
+    color: #2C3E50;
+}
+
+footer {
+    background-color: #2C3E50;
+    color: white;
+    padding: 20px;
+    text-align: center;
+    display: flex;
+}
+
+.footer-grouped {
+    display: flex;
+    margin-top: 20px;
+    margin-left: 18rem;
+}
+
+.footer-logo {
+    font-size: 12px;
+    margin-top: 10px;
+    margin-left: 20px;
+}
+
+.terms-link {
+    padding-left: 20px;
+}
+
+.year-update {
+    padding-bottom: 20px;
+}
+
+.socials {
+    display: flex;
+    margin-left: 5rem;
+    padding-top: 15px;
+}
+
+.social-icons {
+    display: flex;
+    margin-left: 5rem;
+    margin-top: -15px;
+}
+
+.facebook {
+    width: 45px;
+    padding: 10px;
+}
+
+.twitter {
+    width: 45px;
+    padding: 10px;
+}
+
+.instagram {
+    width: 45px;
+    padding: 10px;
+}
+
+.sociallinks img {
+    max-width: 30px;
+}
+
+.sociallinks a {
+    text-decoration: none;
+}
