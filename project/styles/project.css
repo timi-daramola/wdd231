@@ -137,6 +137,130 @@ h2 {
     padding: 20px;
 }
 
+
+
+.buying-tips ul, .faq-list ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.buying-tips li, .faq-list li {
+    margin-bottom: 10px;
+}
+
+.faq-list li {
+    margin-bottom: 15px;
+}
+
+.buying-tips li::before {
+    content: "✔️";
+    margin-right: 10px;
+}
+
+.product-comparison {
+    width: 100%;
+    margin-top: 20px;
+    border-collapse: collapse;
+}
+
+.product-comparison th, .product-comparison td {
+    padding: 15px;
+    text-align: left;
+    border: 1px solid #ddd;
+}
+
+.product-comparison th {
+    background-color: #2C3E50;
+    color: white;
+}
+
+.product-comparison tr:nth-child(even) {
+    background-color: #f2f2f2;
+}
+
+.cta-button {
+    background-color: #2C3E50;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    text-decoration: none;
+    font-size: 18px;
+    display: inline-block;
+    margin-top: 20px;
+    text-align: center;
+}
+
+.product-table {
+    width: 100%;
+    margin-top: 20px;
+    border-collapse: collapse;
+    text-align: center;
+}
+
+.product-table th, .product-table td {
+    padding: 15px;
+    text-align: center;
+    border: 1px solid #ddd;
+}
+
+.product-table th {
+    background-color: #2C3E50;
+    color: white;
+}
+
+.product-table tr:nth-child(even) {
+    background-color: #f2f2f2;
+}
+
+.product-image {
+    max-width: 150px;
+    border-radius: 8px;
+}
+
+.product-name {
+    font-size: 18px;
+    font-weight: bold;
+    color: #333;
+}
+
+.price {
+    font-size: 18px;
+    color: #2C3E50;
+    font-weight: bold;
+}
+
+.rating {
+    color: #FFD700;
+}
+
+.cta-button {
+    background-color: #2C3E50;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    text-decoration: none;
+    font-size: 18px;
+    display: inline-block;
+    margin-top: 20px;
+    text-align: center;
+    width: 100%;
+}
+
+.cta-button:hover {
+    background-color: #2C3E50;
+}
+
+.product-comparison-header {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.product-comparison-header h3 {
+    font-size: 24px;
+}
+
 iframe {
     width: 672px;
     height: 300px;

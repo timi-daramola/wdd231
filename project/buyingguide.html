@@ -4,147 +4,135 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Gadget Review - SmartWatch X</title>
-    <link rel="stylesheet" href="styles.css">
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            line-height: 1.6;
-            margin: 0;
-            padding: 0;
-            background-color: #f4f4f4;
-        }
-        header {
-            background-color: #333;
-            color: white;
-            text-align: center;
-            padding: 1em 0;
-        }
-        .container {
-            width: 80%;
-            margin: 0 auto;
-            padding: 20px;
-            background-color: white;
-        }
-        .gadget-image {
-            width: 100%;
-            height: auto;
-            border-radius: 10px;
-        }
-        h1 {
-            color: #333;
-        }
-        .rating {
-            display: flex;
-            justify-content: center;
-            gap: 5px;
-        }
-        .rating span {
-            font-size: 1.5em;
-            color: gold;
-        }
-        .features, .pros-cons, .specifications {
-            margin-bottom: 20px;
-        }
-        ul {
-            padding-left: 20px;
-        }
-        .review-summary {
-            background-color: #eaeaea;
-            padding: 10px;
-            border-radius: 5px;
-        }
-        .pros, .cons {
-            padding-left: 20px;
-        }
-        footer {
-            text-align: center;
-            padding: 20px;
-            background-color: #333;
-            color: white;
-        }
-    </style>
+    <title>TimiTech - Your Guide to Latest Technology and Gadgets</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles/project.css">
+    <script src="scripts/project.js" defer></script>
 </head>
 <body>
     <header>
-        <h1>SmartWatch X Review</h1>
-        <p>Your ultimate tech companion</p>
+        <div class="logo">
+            <h1>TimiTech</h1>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="project.html">Tech News</a></li>
+                <li><a href="gadgetreviews.html">Gadget Reviews</a></li>
+                <li><a href="buyingguide.html">Buying Guides</a></li>
+                <li><a href="productscomparison.html">Product Comparisons</a></li>
+                <li><a href="techtutorials.html">Tech Tutorials</a></li>
+            </ul>
+        </nav>
+        <div>
+            <a href="register.html" class="cta-btn">Register</a>
+        </div>
     </header>
-
-    <div class="container">
-        <!-- Gadget Image -->
-        <img src="smartwatch.jpg" alt="SmartWatch X" class="gadget-image">
-
-        <!-- Gadget Rating -->
-        <div class="rating">
-            <span>&#9733;</span>
-            <span>&#9733;</span>
-            <span>&#9733;</span>
-            <span>&#9733;</span>
-            <span>&#9734;</span>
-            <p>4/5 Stars</p>
-        </div>
-
-        <!-- Review Summary -->
-        <div class="review-summary">
-            <h2>Review Summary</h2>
-            <p>The SmartWatch X combines cutting-edge technology with sleek design, making it a solid choice for fitness enthusiasts and tech lovers alike. With features like heart-rate tracking, GPS, and a 2-day battery life, it offers great value for the price.</p>
-        </div>
-
-        <!-- Gadget Features -->
-        <div class="features">
-            <h2>Features</h2>
-            <ul>
-                <li>Heart-rate Monitoring</li>
-                <li>Built-in GPS</li>
-                <li>2-day Battery Life</li>
-                <li>Water-resistant</li>
-                <li>Customizable Watch Faces</li>
-            </ul>
-        </div>
-
-        <!-- Pros and Cons -->
-        <div class="pros-cons">
-            <div class="pros">
-                <h3>Pros</h3>
+    <main>
+        <header>
+            <h1>Ultimate Buying Guide</h1>
+            <p>Your complete guide to make informed purchase decisions</p>
+        </header>
+        
+        <section id="introduction">
+            <h2>Introduction</h2>
+            <p>Welcome to our Buying Guide! Whether you are buying gadgets, electronics, furniture, or any other product, we are here to help you make an informed decision. Our guide offers expert advice, product comparisons, and useful tips to ensure you find the best product for your needs.</p>
+        </section>
+        
+        <section id="buying-tips">
+            <h2>Top Buying Tips</h2>
+            <div class="buying-tips">
                 <ul>
-                    <li>Lightweight and Comfortable</li>
-                    <li>Long Battery Life</li>
-                    <li>Accurate Fitness Tracking</li>
-                    <li>Great Value for Price</li>
+                    <li>Know Your Needs: Identify exactly what you want from the product before looking at options.</li>
+                    <li>Research: Read customer reviews, expert opinions, and product specifications to make a well-rounded decision.</li>
+                    <li>Set a Budget: Determine your spending limits and avoid overspending.</li>
+                    <li>Compare Products: Don’t settle for the first option. Always compare similar products to get the best deal.</li>
+                    <li>Look for Discounts: Keep an eye out for seasonal sales and discounts to get the best value.</li>
                 </ul>
             </div>
-
-            <div class="cons">
-                <h3>Cons</h3>
+        </section>
+        
+        <section id="product-comparison">
+            <h2>Product Comparison</h2>
+            <table class="product-comparison">
+                <thead>
+                    <tr>
+                        <th>Product</th>
+                        <th>Features</th>
+                        <th>Price</th>
+                        <th>Rating</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Product A</td>
+                        <td>Feature 1, Feature 2, Feature 3</td>
+                        <td>$500</td>
+                        <td>4.5/5</td>
+                    </tr>
+                    <tr>
+                        <td>Product B</td>
+                        <td>Feature 1, Feature 2, Feature 4</td>
+                        <td>$450</td>
+                        <td>4.0/5</td>
+                    </tr>
+                    <tr>
+                        <td>Product C</td>
+                        <td>Feature 2, Feature 3, Feature 5</td>
+                        <td>$550</td>
+                        <td>4.7/5</td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+        
+        <section id="faq">
+            <h2>Frequently Asked Questions</h2>
+            <div class="faq-list">
                 <ul>
-                    <li>Limited Third-Party App Support</li>
-                    <li>Screen can be hard to read in direct sunlight</li>
+                    <li><strong>Q: How do I choose the right product for my needs?</strong><br>A: Focus on what features are most important to you and compare similar products. Always check customer reviews.</li>
+                    <li><strong>Q: Is it worth paying extra for premium features?</strong><br>A: Premium features are usually worth it if they enhance the product's performance or usability, but make sure you truly need them.</li>
+                    <li><strong>Q: Where can I find the best deals?</strong><br>A: Shop around online on well-known platforms, look for seasonal sales, and keep an eye on special promotions and discount codes.</li>
                 </ul>
             </div>
-        </div>
-
-        <!-- Specifications -->
-        <div class="specifications">
-            <h2>Specifications</h2>
-            <ul>
-                <li><strong>Display:</strong> 1.4-inch AMOLED</li>
-                <li><strong>Battery Life:</strong> Up to 48 hours</li>
-                <li><strong>Water Resistance:</strong> 50m</li>
-                <li><strong>Compatibility:</strong> Android & iOS</li>
-                <li><strong>Weight:</strong> 40g</li>
-            </ul>
-        </div>
-
-        <!-- Conclusion -->
-        <div class="conclusion">
-            <h2>Final Verdict</h2>
-            <p>The SmartWatch X is a feature-packed smartwatch at an affordable price point. It is a perfect choice for anyone looking for a stylish, functional fitness tracker with solid performance across the board. Highly recommended for fitness enthusiasts!</p>
-        </div>
-    </div>
-
+        </section>
+        
+        <section id="call-to-action">
+            <h2>Ready to Buy?</h2>
+            <p>If you're ready to make your purchase, click the button below to view the top recommended products and make a smart buying decision.</p>
+            <a href="https://www.amazon.com/Notebooks-Laptop-Computers/b?ie=UTF8&node=565108" class="cta-button" target="_blank">View Products</a>
+        </section>
+    </main>
     <footer>
-        <p>&copy; 2024 Gadget Reviews. All Rights Reserved.</p>
+        <div class="footer-logo">
+            <h1>TimiTech</h1>
+        </div>
+        <div class="footer-container">
+            <div class="socials">
+                <a class="terms-link" href="#">Tech News</a>
+                <a class="terms-link" href="#">Gadget Reviews</a>
+                <a class="terms-link" href="#">Buying Guides</a>
+                <a class="terms-link" href="#">Product Comparisons</a>
+                <a class="terms-link" href="#">Tech Tutorials</a>
+                <a class="terms-link" href="#">Contact</a>
+                <div class="social-icons">
+                    <a href="https://instragram.com" class="instagram">
+                        <img src="images/6929237_instagram_icon.svg" alt="Instagram">
+                    </a>
+                    <a href="https://facebook.com" class="facebook">
+                        <img src="images/5365678_fb_facebook_facebook_logo_icon.svg" alt="Facebook">
+                    </a>
+                    <a href="https://twitter.com" class="twitter">
+                        <img src="images/5296516_tweet_twitter_twitter_logo_icon.svg" alt="Twitter">
+                    </a>
+                </div>
+            </div>
+            <div class="footer-grouped">
+                ©<p class="year-update" id="currentyear"></p>
+                <a class="terms-link" href="#">Privacy Policy</a>
+                <a class="terms-link" href="#">Privacy Policy</a>
+                <a class="terms-link" href="#">Terms of Service</a>
+            </div>
+        </div>
     </footer>
 </body>
 </html>
