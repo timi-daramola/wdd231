@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>TimiTech - Your Guide to Latest Technology and Gadgets</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles/project.css">
+    <script src="scripts/project.js" defer></script>
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <h1>TimiTech</h1>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="project.html">Tech News</a></li>
+                <li><a href="#">Gadget Reviews</a></li>
+                <li><a href="#">Buying Guides</a></li>
+                <li><a href="#">Product Comparisons</a></li>
+                <li><a href="#">Tech Tutorials</a></li>
+            </ul>
+        </nav>
+        <div>
+            <a href="register.html" class="cta-btn">Register</a>
+        </div>
+    </header>
+    <main>        
+        <!-- Register Form -->
+        <div class="form-container" id="register-form">
+            <h2>Register</h2>
+            <form onsubmit="return register(event)">
+                <div class="form-group">
+                    <label for="register-username">Username:</label>
+                    <input type="text" id="register-username" placeholder="Enter username" required>
+                    <div class="error" id="register-username-error"></div>
+                </div>
+                <div class="form-group">
+                    <label for="register-email">Email:</label>
+                    <input type="email" id="register-email" placeholder="Enter email" required>
+                    <div class="error" id="register-email-error"></div>
+                </div>
+                <div class="form-group">
+                    <label for="register-password">Password:</label>
+                    <input type="password" id="register-password" placeholder="Enter password" required>
+                    <div class="error" id="register-password-error"></div>
+                </div>
+                <div class="form-group">
+                    <label for="register-confirm-password">Confirm Password:</label>
+                    <input type="password" id="register-confirm-password" placeholder="Confirm password" required>
+                    <div class="error" id="register-confirm-password-error"></div>
+                </div>
+                <div class="form-group">
+                    <input type="submit" value="Register">
+                </div>
+            </form>
+        </div>
+        
+        <!-- Logout Button -->
+        <div class="form-container" id="logout-section" style="display:none;">
+            <h2>Welcome!</h2>
+            <button onclick="logout()">Logout</button>
+        </div>
+    </main>
+    <footer>
+        <div class="footer-logo">
+            <h1>TimiTech</h1>
+        </div>
+        <div class="footer-container">
+            <div class="socials">
+                <a class="terms-link" href="#">Tech News</a>
+                <a class="terms-link" href="#">Gadget Reviews</a>
+                <a class="terms-link" href="#">Buying Guides</a>
+                <a class="terms-link" href="#">Product Comparisons</a>
+                <a class="terms-link" href="#">Tech Tutorials</a>
+                <a class="terms-link" href="#">Contact</a>
+                <div class="social-icons">
+                    <a href="https://instragram.com" class="instagram">
+                        <img src="images/6929237_instagram_icon.svg" alt="Instagram">
+                    </a>
+                    <a href="https://facebook.com" class="facebook">
+                        <img src="images/5365678_fb_facebook_facebook_logo_icon.svg" alt="Facebook">
+                    </a>
+                    <a href="https://twitter.com" class="twitter">
+                        <img src="images/5296516_tweet_twitter_twitter_logo_icon.svg" alt="Twitter">
+                    </a>
+                </div>
+            </div>
+            <div class="footer-grouped">
+                ©<p class="year-update" id="currentyear"></p>
+                <a class="terms-link" href="#">Privacy Policy</a>
+                <a class="terms-link" href="#">Privacy Policy</a>
+                <a class="terms-link" href="#">Terms of Service</a>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>
+
+
+<script>
+
+    function checkLoginStatus() {
+            let user = localStorage.getItem('user');
+            if (user) {
+                // If logged in, redirect to the dashboard or protected page
+                document.getElementById('login-form').style.display = 'none';
+                document.getElementById('register-form').style.display = 'none';
+                document.getElementById('logout-section').style.display = 'block';
+            } else {
+                // If not logged in, show the login form
+                document.getElementById('login-form').style.display = 'block';
+                document.getElementById('register-form').style.display = 'none';
+                document.getElementById('logout-section').style.display = 'none';
+            }
+        }
+
+    // Register Form Validation and Processing
+    function register(event) {
+        event.preventDefault();
+
+        // Clear any previous error messages
+        document.getElementById('register-username-error').innerText = '';
+        document.getElementById('register-email-error').innerText = '';
+        document.getElementById('register-password-error').innerText = '';
+        document.getElementById('register-confirm-password-error').innerText = '';
+
+        // Get input values
+        var username = document.getElementById('register-username').value;
+        var email = document.getElementById('register-email').value;
+        var password = document.getElementById('register-password').value;
+        var confirmPassword = document.getElementById('register-confirm-password').value;
+
+        var valid = true;
+
+        // Username validation
+        if (username.trim() === '') {
+            document.getElementById('register-username-error').innerText = 'Username is required.';
+            valid = false;
+        }
+
+        // Email validation
+        if (email.trim() === '' || !validateEmail(email)) {
+            document.getElementById('register-email-error').innerText = 'Please enter a valid email.';
+            valid = false;
+        }
+
+        // Password validation
+        if (password.trim() === '') {
+            document.getElementById('register-password-error').innerText = 'Password is required.';
+            valid = false;
+        }
+
+        // Confirm password validation
+        if (confirmPassword.trim() !== password) {
+            document.getElementById('register-confirm-password-error').innerText = 'Passwords do not match.';
+            valid = false;
+        }
+
+        if (valid) {
+            localStorage.setItem('user', username);  // Save user data in localStorage
+            alert('Registration successful!');
+            checkLoginStatus();  // Update the UI
+        }
+
+        return valid;
+    }
+
+    // Email format validation function
+    function validateEmail(email) {
+        var re = /^[a-zA-Z0-9._-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,6}$/;
+        return re.test(email);
+    }
+</script>
+
+

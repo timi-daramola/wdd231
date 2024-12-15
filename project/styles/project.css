@@ -129,10 +129,17 @@ h2 {
 
 .tutorial-item {
     text-align: center;
+    height: 400px;
+}
+
+.laptop-image {
+    width: 350px;
+    padding: 20px;
 }
 
 iframe {
-    height: 200px;
+    width: 672px;
+    height: 300px;
     border: 0 transparent;
     padding: 10px;
 }
