@@ -14,21 +14,21 @@
         <div class="logo">
             <h1>TimiTech</h1>
         </div>
-        <nav>
-            <ul>
-                <li><a href="project.html">Tech News</a></li>
-                <li><a href="gadgetreviews.html">Gadget Reviews</a></li>
-                <li><a href="buyingguide.html">Buying Guides</a></li>
-                <li><a href="productscomparison.html">Product Comparisons</a></li>
-                <li><a href="techtutorials.html">Tech Tutorials</a></li>
-            </ul>
-        </nav>
-        <div>
-            <a href="register.html" class="cta-btn">Register</a>
+        <div class="dropdown">
+            <button id="myBtn" class="dropbtn">☰</button>
+            <div id="myDropdown" class="dropdown-content">
+                <a href="project.html">Tech News</a>
+                <a href="gadgetreviews.html">Gadget Reviews</a>
+                <a href="buyingguide.html">Buying Guides</a>
+                <a href="productscomparison.html">Product Comparisons</a>
+                <a href="techtutorials.html">Tech Tutorials</a>
+                <div>
+                    <a href="register.html" class="cta-btn">Register</a>
+                </div>
+            </div>
         </div>
     </header>
     <main>        
-        <!-- Register Form -->
         <div class="form-container" id="register-form">
             <h2>Register</h2>
             <form onsubmit="return register(event)">
@@ -58,7 +58,6 @@
             </form>
         </div>
         
-        <!-- Logout Button -->
         <div class="form-container" id="logout-section" style="display:none;">
             <h2>Welcome!</h2>
             <button onclick="logout()">Logout</button>
@@ -98,81 +97,5 @@
     </footer>
 </body>
 </html>
-
-
-<script>
-
-    function checkLoginStatus() {
-            let user = localStorage.getItem('user');
-            if (user) {
-                // If logged in, redirect to the dashboard or protected page
-                document.getElementById('login-form').style.display = 'none';
-                document.getElementById('register-form').style.display = 'none';
-                document.getElementById('logout-section').style.display = 'block';
-            } else {
-                // If not logged in, show the login form
-                document.getElementById('login-form').style.display = 'block';
-                document.getElementById('register-form').style.display = 'none';
-                document.getElementById('logout-section').style.display = 'none';
-            }
-        }
-
-    // Register Form Validation and Processing
-    function register(event) {
-        event.preventDefault();
-
-        // Clear any previous error messages
-        document.getElementById('register-username-error').innerText = '';
-        document.getElementById('register-email-error').innerText = '';
-        document.getElementById('register-password-error').innerText = '';
-        document.getElementById('register-confirm-password-error').innerText = '';
-
-        // Get input values
-        var username = document.getElementById('register-username').value;
-        var email = document.getElementById('register-email').value;
-        var password = document.getElementById('register-password').value;
-        var confirmPassword = document.getElementById('register-confirm-password').value;
-
-        var valid = true;
-
-        // Username validation
-        if (username.trim() === '') {
-            document.getElementById('register-username-error').innerText = 'Username is required.';
-            valid = false;
-        }
-
-        // Email validation
-        if (email.trim() === '' || !validateEmail(email)) {
-            document.getElementById('register-email-error').innerText = 'Please enter a valid email.';
-            valid = false;
-        }
-
-        // Password validation
-        if (password.trim() === '') {
-            document.getElementById('register-password-error').innerText = 'Password is required.';
-            valid = false;
-        }
-
-        // Confirm password validation
-        if (confirmPassword.trim() !== password) {
-            document.getElementById('register-confirm-password-error').innerText = 'Passwords do not match.';
-            valid = false;
-        }
-
-        if (valid) {
-            localStorage.setItem('user', username);  // Save user data in localStorage
-            alert('Registration successful!');
-            checkLoginStatus();  // Update the UI
-        }
-
-        return valid;
-    }
-
-    // Email format validation function
-    function validateEmail(email) {
-        var re = /^[a-zA-Z0-9._-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,6}$/;
-        return re.test(email);
-    }
-</script>
 
 
