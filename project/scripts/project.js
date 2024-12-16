@@ -13,17 +13,14 @@ lastModified.innerHTML = `<span class="highlight">Last Modification: ${new Intl.
 ).format(today)}</span>`;
 
 
-document.getElementById("myBtn").onclick = function() {myFunction()};
-
-// function toggleOpen() {
-//   document.getElementsByClassName("dropdown-content").style.display = 'block';
-// } 
-
-function myFunction() {
-  document.getElementById("myDropdown").classList.toggle("show");
+function toggleButton() {
+	var x = document.querySelector(".dropdown-content");
+	if (x.style.display === "none") {
+		x.style.display = "block";
+	} else {
+		x.style.display = "none";
+	}
 }
-
-
 
 
 function checkLoginStatus() {
