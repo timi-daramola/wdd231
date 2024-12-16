@@ -33,38 +33,138 @@
         background-color: black;
         color: white;
     }
+
+    iframe {
+        width: 672px;
+        height: 300px;
+        border: 0 transparent;
+        padding: 10px;
+    }
+
+    footer {
+        background-color: #2C3E50;
+        color: white;
+        padding: 20px;
+        text-align: center;
+        display: flex;
+    }
     
-    .show {display:block;}
+    .footer-container {
+        margin-left: 2rem;
+    }
+    
+    .footer-grouped {
+        display: flex;
+        margin-top: 20px;
+        margin-left: 10rem;
+    }
+    
+    .footer-logo {
+        font-size: 12px;
+        margin-top: 10px;
+        margin-left: 10px;
+    }
+    
+    .terms-link {
+        padding-left: 10px;
+    }
+    
+    .year-update {
+        padding-bottom: 20px;
+    }
+    
+    .socials {
+        display: flex;
+        padding-top: 15px;
+    }
+
+    .news-container {
+        display: flex;
+        justify-content: space-between;
+        gap: 20px;
+        flex-wrap: wrap;
+    }
+    
+    .news-item {
+        background-color: white;
+        border-radius: 8px;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        width: 30%;
+        margin-bottom: 20px;
+        overflow: hidden;
+    }
+    
+    .news-item img {
+        width: 100%;
+        height: auto;
+        border-bottom: 2px solid #BDC3C7;
+    }
+    
+    .news-content {
+        padding: 15px;
+    }
+    
+    .news-content h3 {
+        color: #2C3E50;
+        font-size: 1.5em;
+        margin-bottom: 15px;
+    }
+    
+    .news-content p {
+        font-size: 1em;
+        color: #34495E;
+        margin-bottom: 15px;
+    }
+
+    .laptop-list {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 20px;
+        justify-content: center;
+    }
+
+    .laptop-item {
+        background-color: white;
+        border-radius: 8px;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        width: 30%;
+        padding: 15px;
+        text-align: center;
+    }
+    .laptop-item img {
+        width: 100%;
+        height: auto;
+        border-radius: 5px;
+    }
+    .laptop-item h3 {
+        color: #2C3E50;
+        margin-top: 15px;
+    }
+    .laptop-item p {
+        color: #34495E;
+        font-size: 1em;
+        margin: 10px 0;
+    }
+
+    .guides, .tutorials {
+        margin-top: 30px;
+    }
+    
 }
 
 
 
 @media only screen and (max-width: 600px) {
     body {
-        background-color: skyblue;
         max-width: 90%;
         margin: auto;
     }
     header {
-        width: 26rem;
+        width: 25rem;
         display: flex;
         margin-top: 20px;
         background-color: #c3c3c3;
         margin-right: 68px;
-    }
-
-    .weather-description {
-        margin-left: 7rem;
-        margin-top: -6rem;
-    }
-
-    .weather-description, h1 {
-        font-size: 15px;
-    }
-
-    .forecast {
-        margin-left: 3rem;
-        margin-top: 6rem;
     }
 
     .dropdown-content {
@@ -91,10 +191,6 @@
         width: 40px;
         padding: 10px;
         margin-top: 5px;
-    }
-
-    .navigation {
-        overflow: hidden;
     }
 
     .dropbtn {
@@ -131,18 +227,116 @@
     
     .dropdown-content a:hover {background-color: #f1f1f1}
     
-    .show {display:block;}
+    .show {
+        display:block;
+    }
 
-    #toggle-button {
+    iframe {
+        width: 300px;
+        height: 280px;
+        border: 0 transparent;
+        padding: 10px;
+    }
+
+    footer {
+        background-color: #2C3E50;
+        color: white;
+        padding: 20px;
+        text-align: center;
         display: block;
-        font-size: 2rem;
-        font-weight:700;
-        text-decoration: none;
-        padding: .5rem .75rem;
-        background-color: #c3c3c3;
-        color: #000;
-        margin-left: 14rem;
-        margin-top: 10px;
+    }
+    
+    .footer-container {
+        
+        display: block;
+    }
+    
+    .footer-grouped {
+        display: block;
+        margin-top: 20px;
+       
+    }
+
+    .socials {
+        display: block;
+        padding-top: 15px;
+    }
+
+    .news-container {
+        display: block;
+        justify-content: space-between;
+        gap: 20px;
+        flex-wrap: wrap;
+    }
+    
+    .news-item {
+        background-color: white;
+        border-radius: 8px;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        width: 100%;
+        margin-bottom: 20px;
+        overflow: hidden;
+    }
+    
+    .news-item img {
+        width: 100%;
+        height: auto;
+        border-bottom: 2px solid #BDC3C7;
+    }
+    
+    .news-content {
+        padding: 15px;
+    }
+    
+    .news-content h3 {
+        color: #2C3E50;
+        font-size: 1.5em;
+        margin-bottom: 15px;
+    }
+    
+    .news-content p {
+        font-size: 1em;
+        color: #34495E;
+        margin-bottom: 15px;
+    }
+
+    .laptop-list {
+        display: block;
+        flex-wrap: wrap;
+        gap: 20px;
+        justify-content: center;
+    }
+
+    .laptop-item {
+        background-color: white;
+        border-radius: 8px;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        width: 100%;
+        padding: 15px;
+        text-align: center;
+        margin-top: 20px;
+    }
+    .laptop-item img {
+        width: 100%;
+        height: auto;
+        border-radius: 5px;
+    }
+    .laptop-item h3 {
+        color: #2C3E50;
+        margin-top: 15px;
+    }
+    .laptop-item p {
+        color: #34495E;
+        font-size: 1em;
+        margin: 10px 0;
+    }
+
+    .guides {
+        margin-top: 64rem;
+    }
+
+    .tutorials {
+        margin-top: 30px;
     }
 
 }
@@ -238,10 +432,6 @@ h2 {
     font-weight: bold;
     text-align: center;
 
-}
-
-.guides, .tutorials {
-    margin-top: 30px;
 }
 
 .guide-item {
@@ -420,42 +610,6 @@ h2 {
     border-radius: 8px;
 }
 
-iframe {
-    width: 672px;
-    height: 300px;
-    border: 0 transparent;
-    padding: 10px;
-}
-
-.laptop-list {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 20px;
-    justify-content: center;
-}
-.laptop-item {
-    background-color: white;
-    border-radius: 8px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    width: 30%;
-    padding: 15px;
-    text-align: center;
-}
-.laptop-item img {
-    width: 100%;
-    height: auto;
-    border-radius: 5px;
-}
-.laptop-item h3 {
-    color: #2C3E50;
-    margin-top: 15px;
-}
-.laptop-item p {
-    color: #34495E;
-    font-size: 1em;
-    margin: 10px 0;
-}
-
 .tech-news {
     background-color: #ECF0F1;
     padding: 30px;
@@ -467,44 +621,6 @@ iframe {
     text-align: center;
     margin-bottom: 20px;
     font-size: 2em;
-}
-
-.news-container {
-    display: flex;
-    justify-content: space-between;
-    gap: 20px;
-    flex-wrap: wrap;
-}
-
-.news-item {
-    background-color: white;
-    border-radius: 8px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    width: 30%;
-    margin-bottom: 20px;
-    overflow: hidden;
-}
-
-.news-item img {
-    width: 100%;
-    height: auto;
-    border-bottom: 2px solid #BDC3C7;
-}
-
-.news-content {
-    padding: 15px;
-}
-
-.news-content h3 {
-    color: #2C3E50;
-    font-size: 1.5em;
-    margin-bottom: 15px;
-}
-
-.news-content p {
-    font-size: 1em;
-    color: #34495E;
-    margin-bottom: 15px;
 }
 
 .cta-btn {
@@ -520,43 +636,6 @@ iframe {
 
 .cta-btn:hover {
     background-color: #34495E;
-}
-
-footer {
-    background-color: #2C3E50;
-    color: white;
-    padding: 20px;
-    text-align: center;
-    display: flex;
-}
-
-.footer-container {
-    margin-left: 2rem;
-}
-
-.footer-grouped {
-    display: flex;
-    margin-top: 20px;
-    margin-left: 10rem;
-}
-
-.footer-logo {
-    font-size: 12px;
-    margin-top: 10px;
-    margin-left: 10px;
-}
-
-.terms-link {
-    padding-left: 10px;
-}
-
-.year-update {
-    padding-bottom: 20px;
-}
-
-.socials {
-    display: flex;
-    padding-top: 15px;
 }
 
 .social-icons {

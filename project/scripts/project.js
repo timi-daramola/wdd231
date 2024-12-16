@@ -12,13 +12,12 @@ lastModified.innerHTML = `<span class="highlight">Last Modification: ${new Intl.
 	}
 ).format(today)}</span>`;
 
-function toggleBar(){
-    const toggleButton = document.getElementById('navigate');
-    toggleButton.classList.toggle("show");
-}
-
 
 document.getElementById("myBtn").onclick = function() {myFunction()};
+
+// function toggleOpen() {
+//   document.getElementsByClassName("dropdown-content").style.display = 'block';
+// } 
 
 function myFunction() {
   document.getElementById("myDropdown").classList.toggle("show");
@@ -30,12 +29,10 @@ function myFunction() {
 function checkLoginStatus() {
 	let user = localStorage.getItem('user');
 	if (user) {
-		// If logged in, redirect to the dashboard or protected page
 		document.getElementById('login-form').style.display = 'none';
 		document.getElementById('register-form').style.display = 'none';
 		document.getElementById('logout-section').style.display = 'block';
 	} else {
-		// If not logged in, show the login form
 		document.getElementById('login-form').style.display = 'block';
 		document.getElementById('register-form').style.display = 'none';
 		document.getElementById('logout-section').style.display = 'none';
@@ -45,13 +42,11 @@ function checkLoginStatus() {
 function register(event) {
 event.preventDefault();
 
-// Clear any previous error messages
 document.getElementById('register-username-error').innerText = '';
 document.getElementById('register-email-error').innerText = '';
 document.getElementById('register-password-error').innerText = '';
 document.getElementById('register-confirm-password-error').innerText = '';
 
-// Get input values
 var username = document.getElementById('register-username').value;
 var email = document.getElementById('register-email').value;
 var password = document.getElementById('register-password').value;
